@@ -2,26 +2,26 @@
 
 ## Table of Contents
 
-- [Compute](#01-compute)
-- [Networking](#02-networking)
-- [Storage](#03-storage)
-- [Databases](#04-databases)
-- [Ai Ml](#05-ai_ml)
-- [Analytics](#06-analytics)
-- [Security](#07-security)
-- [Management](#08-management)
-- [App Integration](#09-app_integration)
-- [Developer Tools](#10-developer_tools)
-- [Frontend Mobile](#11-frontend_mobile)
-- [Business Apps](#12-business_apps)
-- [End User Computing](#13-end_user_computing)
-- [Iot](#14-iot)
-- [Migration Transfer](#15-migration_transfer)
-- [Marketplace Partners](#16-marketplace_partners)
+- [Compute](#compute)
+- [Networking and Content Delivery](#networking)
+- [Storage](#storage)
+- [Databases](#databases)
+- [AI and Machine Learning](#ai-and-machine-learning)
+- [Analytics](#analytics)
+- [Security, Identity, and Compliance](#security-identity-and-compliance)
+- [Management and Governance](#management-and-governance)
+- [Application Integration](#application-integration)
+- [Developer Tools](#developer-tools)
+- [Frontend and Mobile](#frontend-and-mobile)
+- [Business Applications](#business-applications)
+- [End-User Computing](#end-user-computing)
+- [Iot](#iot)
+- [Migration and Transfer](#migration-and-transfer)
+- [Marketplace and Partners](#marketplace-and-partners)
 
 ---
 
-## 01-compute
+# Compute
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-EC2_16.png) Amazon EC2
 
@@ -751,9 +751,7 @@ Amazon API Gateway is a managed service for building and managing APIs at scale.
 
 ---
 
-## 02-networking
-
-# Networking & Content Delivery
+# Networking
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-Virtual-Private-Cloud_16.png) Amazon VPC
 
@@ -1322,8 +1320,6 @@ AWS Global Accelerator routes user traffic over the AWS global backbone instead 
 
 ---
 
-## 03-storage
-
 # Storage
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-Simple-Storage-Service_16.png) Amazon S3
@@ -1733,8 +1729,6 @@ Massive data transfer truck for exabyte-scale migrations.
 
 ---
 
-## 04-databases
-
 # Databases
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-RDS_16.png) Amazon RDS
@@ -2054,9 +2048,7 @@ Amazon Redshift is a massively parallel processing (MPP) data warehouse optimize
 
 ---
 
-## 05-ai_ml
-
-# Machine Learning & AI
+# AI and Machine Learning
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Comprehend_16.png) Amazon Comprehend
 
@@ -2621,8 +2613,6 @@ Amazon Q Developer provides AI-assisted code generation, refactoring, debugging 
 
 ---
 
-## 06-analytics
-
 # Analytics
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Athena_16.png) Amazon Athena
@@ -2931,9 +2921,7 @@ Amazon OpenSearch Service provides full-text search, log analytics, dashboards, 
 
 ---
 
-## 07-security
-
-# Security, Identity & Compliance
+# Security, Identity and Compliance
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Identity-and-Access-Management_16.png) AWS Identity and Access Management (IAM)
 
@@ -3558,9 +3546,7 @@ IAM Access Analyzer identifies unintended public or cross-account access in poli
 
 ---
 
-## 08-management
-
-# Management & Governance
+# Management and Governance
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-CloudFormation_16.png) AWS CloudFormation
 
@@ -4156,8 +4142,6 @@ Billing Conductor enables custom chargeback and cost distribution across teams o
 
 ---
 
-## 09-app_integration
-
 # Application Integration
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-EventBridge_16.png) Amazon EventBridge
@@ -4302,8 +4286,6 @@ ALB is a layer 7 load balancer that routes HTTP/HTTPS traffic based on content a
 - “Layer 7,” “path-based routing,” “microservices” → ALB
 
 ---
-
-## 10-developer_tools
 
 # Developer Tools
 
@@ -4654,9 +4636,7 @@ AppConfig manages, validates, and deploys application configuration safely.
 
 ---
 
-## 11-frontend_mobile
-
-# Frontend & Mobile
+# Frontend and Mobile
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Front-End-Web-Mobile/16/Arch_AWS-Amplify_16.png) AWS Amplify
 
@@ -4729,8 +4709,6 @@ AWS AppSync is a fully managed GraphQL API service for building real-time, offli
 - “GraphQL,” “real-time subscriptions,” “offline-ready apps” → AppSync
 
 ---
-
-## 12-business_apps
 
 # Business Applications
 
@@ -4805,8 +4783,6 @@ SES is a scalable email platform for transactional, marketing, and bulk email se
 - “Transactional email,” “SMTP,” “deliverability” → SES
 
 ---
-
-## 13-end_user_computing
 
 # End-User Computing
 
@@ -4917,8 +4893,6 @@ WorkSpaces Secure Browser provides secure, isolated browser sessions streamed fr
 
 ---
 
-## 14-iot
-
 # IoT
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Internet-of-Things/16/Arch_AWS-IoT-Core_16.png) AWS IoT Core
@@ -4994,9 +4968,7 @@ IoT Greengrass extends AWS to edge devices, enabling local compute, messaging, M
 
 ---
 
-## 15-migration_transfer
-
-# Migration & Transfer
+# Migration and Transfer
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Migration-Hub_16.png) AWS Migration Hub
 
@@ -5173,9 +5145,7 @@ Migration Evaluator provides cost modeling and business case analysis for migrat
 
 ---
 
-## 16-marketplace_partners
-
-# Marketplace & Partners
+# Marketplace and Partners
 
 ## AWS Marketplace
 
