@@ -1,4 +1,4 @@
-# AWS Services Mega Document
+# Cloud Practitioner - AWS Services
 
 ## Table of Contents
 
