@@ -39,8 +39,29 @@ Amazon EC2 is a web service that provides secure, resizable compute capacity usi
 
 ### 3. Additional Info
 
-- Purchasing models: On-Demand, Reserved Instances, Spot Instances, Savings Plans
-- Instance types: General Purpose t3, Compute Optimized c5, Memory Optimized r5a, Storage Optimized d2, Accelerated Computing f1
+- Purchasing models, in order or how expensive they are:
+  - Spot Instances: Deeply discounted spare EC2 capacity with the risk of termination; best for fault-tolerant or flexible workloads.
+  - Savings Plans: Commit to a consistent hourly spend for 1–3 years; most flexible discount model covering EC2, Fargate, and Lambda usage.
+  - Reserved Instances (RI): 1–3 year commitment for significant discounts; ideal for steady, predictable workloads requiring consistent capacity.
+  - Convertible Reserved Instances: Like RIs but allow changing instance families, OS, or tenancy during the term; slightly smaller discount than Standard RIs.
+  - Zonal Reserved Instances: Reserved Instances locked to a specific AZ, providing both a capacity reservation and a discount.
+  - On-Demand Instances: Pay by the second or hour with no long-term commitment; best for unpredictable or short-lived workloads.
+  - Capacity Reservations: Reserve capacity in a specific AZ without long-term commitment; ensures availability but still charged at On-Demand rates unless paired with RIs or Savings Plans.
+  - Dedicated Instances: Instances running on hardware isolated to a single customer; provides tenancy isolation without the licensing benefits of Dedicated Hosts.
+  - Dedicated Hosts: Physical servers fully allocated to you; required for certain licensing models and compliance where host-level visibility is needed.
+- Instance types:
+  - General Purpose (t3/t4g, m5/m6g): Balanced compute, memory, and networking; ideal default choice for most workloads needing general versatility.
+  - Compute Optimized (c5/c6g): High-performance processors optimized for compute-intensive tasks like gaming servers, scientific modeling, and batch processing.
+  - Memory Optimized (r5/r6g, x2idn/x2iedn, z1d): Designed for large, in-memory datasets such as databases, caching tiers, and real-time analytics.
+  - Storage Optimized (i3/i4i, d2/d3, h1): Built for high-throughput and low-latency local NVMe storage; ideal for NoSQL databases, data warehousing, and Hadoop workloads.
+  - Accelerated Computing (p3/p4, g4/g5, inf1/inf2, trn1): Use GPUs or specialized accelerators for machine learning training/inference, HPC simulations, and graphics workloads.
+  - Burstable Performance (t3/t4g): Provide baseline CPU with the ability to burst; ideal for variable workloads that are mostly idle but occasionally need more CPU.
+  - High Memory (u-6tb1, u-12tb1, u-24tb1): Extremely large memory instances for SAP HANA and other enterprise in-memory databases.
+  - Density Storage (d2/d3/d3en): High-disk-capacity instances optimized for distributed storage workloads and large file systems.
+  - HPC Instances (hpc6a/hpc7g): Specialized for tightly coupled, compute-heavy HPC workloads, offering high network throughput and low latency.
+  - Arm-Based Instances (a1, m6g, c6g, r6g, t4g): Powered by AWS Graviton processors; cheaper and energy-efficient, recommended whenever workloads support Arm.
+  - Instance Store Instances (i3/i4, d3/d3en): Provide ephemeral NVMe local storage with extremely high IOPS for temporary or scratch data.
+  - Network Optimized (m5n/m6in, r5n/r6in): Provide increased network bandwidth for network-heavy applications or distributed workloads.
 
 ### 4. Limitations
 
@@ -76,10 +97,15 @@ Amazon EC2 is a web service that provides secure, resizable compute capacity usi
 
 ### 7. Exam Notes
 
-- OS-level control → choose EC2
-- Cost optimization questions often involve Spot/Reserved/Savings Plans
-- EC2 does NOT automatically fail over between AZs
-- SGs = stateful; NACLs = stateless
+- Reserved Instances vs Savings Plans: RIs apply mainly to EC2 while Savings Plans cover EC2, Fargate, and Lambda; exams often expect Savings Plans for flexibility.
+- On-Demand vs Spot: If workload is “flexible”, “interruptible”, or “batch”, Spot is expected; otherwise use On-Demand or a discount model.
+- On-Demand vs Savings Plans: 24/7 workloads almost never justify On-Demand; exam expects Savings Plans or RIs.
+- Savings Plans Scope: Compute Savings Plans cover EC2, Fargate, and Lambda; Instance Savings Plans only apply to EC2 with instance-family and region restrictions.
+- Dedicated Hosts vs Dedicated Instances: Dedicated Hosts expose physical host resources for licensing needs, while Dedicated Instances provide only tenancy isolation.
+- Capacity Reservations: Reserve capacity but do not reduce cost unless paired with RIs or Savings Plans; common exam trick.
+- Bursting Workloads: For spiky traffic needing guaranteed availability, choose On-Demand with Auto Scaling, not Spot.
+- Predictable Workloads: Predictable, steady workloads are expected to use Reserved Instances or Savings Plans, not On-Demand.
+- License-Restricted Workloads: Requirements like per-core/per-socket licensing imply the need for Dedicated Hosts.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-EC2-Auto-Scaling_16.png) Amazon EC2 Auto Scaling
 
@@ -5440,5 +5466,3 @@ The AWS Partner Network is a global program for technology and consulting partne
 ### 7. Exam Notes
 
 - “AWS partner ecosystem,” “competencies,” “consulting partners” → APN
-
----
