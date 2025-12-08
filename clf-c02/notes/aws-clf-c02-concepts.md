@@ -1,5 +1,20 @@
 # AWS Cloud Practitioner Exam Notes
 
+## Table of Contents
+
+- [⛅ The 5 Criteria of Cloud Computing](#the-5-criteria-of-cloud-computing)
+- [🟢 Availability Concepts](#availability-concepts)
+- [📈 Scaling Concepts](#scaling-concepts)
+- [🧭 AWS Well-Architected Framework](#aws-well-architected-framework)
+- [🧩 AWS Cloud Adoption Framework (CAF)](#aws-cloud-adoption-framework-caf)
+- [🚀 Adoption Strategies](#adoption-strategies)
+- [📦 The 7 Rs - Migration Strategies](#the-7-rs-migration-strategies)
+- [💰 Cloud Economics & Total Cost of Ownership (TCO)](#cloud-economics--total-cost-of-ownership-tco)
+- [🛡️ Shared Responsibility Model](#shared-responsibility-model)
+- [🔐 AWS Access Management Capabilities](#aws-access-management-capabilities)
+- [💸 AWS Pricing Models & Cost Optimization](#aws-pricing-models--cost-optimization)
+- [🆘 AWS Technical Resources & Support Options](#aws-technical-resources--support-options)
+
 ## ⛅ The 5 Criteria of Cloud Computing
 
 ### Top-Level Intent
