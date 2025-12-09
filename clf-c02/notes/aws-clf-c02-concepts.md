@@ -1,4 +1,4 @@
-# AWS Cloud Practitioner Exam Notes
+# Cloud Practitioner - Concepts
 
 ## Table of Contents
 
