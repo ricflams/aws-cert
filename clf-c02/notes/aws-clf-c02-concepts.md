@@ -472,6 +472,7 @@ This perspective defines policies, controls, and financial management processes 
   - The **cloud governance board** establishes tagging standards and budget controls.
   - The **compliance team** configures guardrails using AWS Organizations SCPs.
   - The **PMO** implements reporting processes to track cloud adoption progress.
+  - Application portfolio management is governance: it is about choosing, not about operating.
 
 ### 🔹Platform Perspective
 
@@ -502,6 +503,7 @@ This perspective defines how workloads are run, monitored, and supported after m
   - The **operations/SRE team** builds dashboards using CloudWatch and X-Ray.
   - The **SRE team** writes incident response runbooks and manages the on-call process.
   - **Automation engineers** implement scaling, patching, and remediation workflows with Systems Manager.
+  - Covers Performance and capacity management
 
 ### Pitfalls
 

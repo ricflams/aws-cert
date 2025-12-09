@@ -562,7 +562,7 @@ Fully managed Platform-as-a-Service (PaaS) for deploying and scaling web applica
 
 ### 1. Definition
 
-AWS Elastic Beanstalk is a managed application deployment service that automates infrastructure provisioning, application deployment, load balancing, scaling, and monitoring. Developers upload application code (e.g., Java, .NET, Node.js, Python, Go, PHP, Ruby), and Beanstalk provisions the required resources such as EC2, Auto Scaling groups, security groups, and Elastic Load Balancers. Users can still access and customize the underlying infrastructure if desired.
+AWS Elastic Beanstalk deploys and scales web applications and services. It is a managed application deployment service that automates infrastructure provisioning, application deployment, load balancing, scaling, and monitoring. Developers upload application code (e.g., Java, .NET, Node.js, Python, Go, PHP, Ruby), and Beanstalk provisions the required resources such as EC2, Auto Scaling groups, security groups, and Elastic Load Balancers. Users can still access and customize the underlying infrastructure if desired.
 
 ### 2. Use-Cases
 
@@ -1033,7 +1033,7 @@ AWS Client VPN provides OpenVPN-based secure remote access for users, integratin
 ### 6. Confusable Services
 
 - AWS Site-to-Site VPN: Both are VPN solutions, but Client VPN is for remote user endpoints, whereas Site-to-Site VPN is for entire network-to-network connections.
-- AWS Direct Connect: Both provide access from on-premises to AWS, but Client VPN is secure remote user access over the internet while DX is a private, high-bandwidth link from a data center.
+- AWS Direct Connect: Both provide access from on-premises to AWS, but Client VPN is secure remote user access over the internet while DX is a private, high-bandwidth link from a data center. Also, Client VPN is encrypted and Direct Connect is not.
 - AWS WorkSpaces Secure Browser / AppStream 2.0: All enable remote access to workloads, but Client VPN connects the device to the VPC network, while WorkSpaces/AppStream provide remote desktops or streamed apps.
 
 ### 7. Exam Notes
