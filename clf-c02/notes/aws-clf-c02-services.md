@@ -2,26 +2,26 @@
 
 ## Table of Contents
 
-- [Compute](#compute)
-- [Networking and Content Delivery](#networking)
-- [Storage](#storage)
-- [Databases](#databases)
-- [AI and Machine Learning](#ai-and-machine-learning)
-- [Analytics](#analytics)
-- [Security, Identity, and Compliance](#security-identity-and-compliance)
-- [Management and Governance](#management-and-governance)
-- [Application Integration](#application-integration)
-- [Developer Tools](#developer-tools)
-- [Frontend and Mobile](#frontend-and-mobile)
-- [Business Applications](#business-applications)
-- [End-User Computing](#end-user-computing)
-- [Iot](#iot)
-- [Migration and Transfer](#migration-and-transfer)
-- [Marketplace and Partners](#marketplace-and-partners)
+- 🖥️ [Compute](#compute)
+- 🌐 [Networking and Content Delivery](#networking)
+- 💾 [Storage](#storage)
+- 🗄️ [Databases](#databases)
+- 🤖 [AI and Machine Learning](#ai-and-machine-learning)
+- 📈 [Analytics](#analytics)
+- 🔐 [Security, Identity, and Compliance](#security-identity-and-compliance)
+- 🛠️ [Management and Governance](#management-and-governance)
+- 🧩 [Application Integration](#application-integration)
+- ⌨️ [Developer Tools](#developer-tools)
+- 📱 [Frontend and Mobile](#frontend-and-mobile)
+- 📊 [Business Applications](#business-applications)
+- 🧑‍💻 [End-User Computing](#end-user-computing)
+- 📟 [Iot](#iot)
+- 🚚 [Migration and Transfer](#migration-and-transfer)
+- 🛒 [Marketplace and Partners](#marketplace-and-partners)
 
 ---
 
-# Compute
+# 🖥️ Compute {#compute}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-EC2_16.png) Amazon EC2
 
@@ -782,7 +782,7 @@ Amazon API Gateway is a managed service for building and managing APIs at scale.
 
 ---
 
-# Networking
+# 🌐 Networking {#networking}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-Virtual-Private-Cloud_16.png) Amazon VPC
 
@@ -1394,7 +1394,7 @@ AWS Global Accelerator routes user traffic over the AWS global backbone instead 
 
 ---
 
-# Storage
+# 💾 Storage {#storage}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-Simple-Storage-Service_16.png) Amazon S3
 
@@ -1800,7 +1800,7 @@ Physical devices for offline or edge data transfer and edge compute.
 
 ---
 
-# Databases
+# 🗄️ Databases {#databases}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-RDS_16.png) Amazon RDS
 
@@ -2149,7 +2149,7 @@ Amazon Redshift is a massively parallel processing (MPP) data warehouse optimize
 
 ---
 
-# AI and Machine Learning
+# 🤖 AI and Machine Learning {#ai-and-machine-learning}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Comprehend_16.png) Amazon Comprehend
 
@@ -2743,7 +2743,7 @@ Amazon Q Developer provides AI-assisted code generation, refactoring, debugging 
 
 ---
 
-# Analytics
+# 📈 Analytics {#analytics}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Athena_16.png) Amazon Athena
 
@@ -3067,7 +3067,7 @@ Amazon OpenSearch Service provides full-text search, log analytics, dashboards, 
 
 ---
 
-# Security, Identity and Compliance
+# 🔐 Security, Identity and Compliance {#security-identity-and-compliance}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Identity-and-Access-Management_16.png) AWS Identity and Access Management (IAM)
 
@@ -3734,7 +3734,7 @@ IAM Access Analyzer identifies unintended public or cross-account access in poli
 
 ---
 
-# Management and Governance
+# 🛠️ Management and Governance {#management-and-governance}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-CloudFormation_16.png) AWS CloudFormation
 
@@ -4366,7 +4366,7 @@ Billing Conductor enables custom chargeback and cost distribution across teams o
 
 ---
 
-# Application Integration
+# 🧩 Application Integration {#application-integration}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-EventBridge_16.png) Amazon EventBridge
 
@@ -4519,7 +4519,7 @@ ALB is a layer 7 load balancer that routes HTTP/HTTPS traffic based on content a
 
 ---
 
-# Developer Tools
+# ⌨️ Developer Tools {#developer-tools}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-Cloud9_16.png) AWS Cloud9
 
@@ -4852,7 +4852,7 @@ AppConfig manages, validates, and deploys application configuration safely.
 
 ---
 
-# Frontend and Mobile
+# 📱 Frontend and Mobile {#frontend-and-mobile}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Front-End-Web-Mobile/16/Arch_AWS-Amplify_16.png) AWS Amplify
 
@@ -4930,7 +4930,7 @@ AWS AppSync is a fully managed GraphQL API service for building real-time, offli
 
 ---
 
-# Business Applications
+# 📊 Business Applications {#business-applications}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Business-Applications/16/Arch_Amazon-Connect_16.png) Amazon Connect
 
@@ -5008,7 +5008,7 @@ SES is a scalable email platform for transactional, marketing, and bulk email se
 
 ---
 
-# End-User Computing
+# 🧑‍💻 End-User Computing {#end-user-computing}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_End-User-Computing/16/Arch_Amazon-AppStream-2_16.png) Amazon AppStream 2.0
 
@@ -5123,7 +5123,7 @@ WorkSpaces Secure Browser provides secure, isolated browser sessions streamed fr
 
 ---
 
-# IoT
+# 📟 IoT {#iot}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Internet-of-Things/16/Arch_AWS-IoT-Core_16.png) AWS IoT Core
 
@@ -5202,7 +5202,7 @@ IoT Greengrass extends AWS to edge devices, enabling local compute, messaging, M
 
 ---
 
-# Migration and Transfer
+# 🚚 Migration and Transfer {#migration-and-transfer}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Migration-Hub_16.png) AWS Migration Hub
 
@@ -5389,7 +5389,7 @@ Migration Evaluator provides cost modeling and business case analysis for migrat
 
 ---
 
-# Marketplace and Partners
+# 🛒 Marketplace and Partners {#marketplace-and-partners}
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png) AWS Marketplace
 
