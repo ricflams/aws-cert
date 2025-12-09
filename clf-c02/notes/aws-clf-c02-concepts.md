@@ -2,20 +2,20 @@
 
 ## Table of Contents
 
-- ⛅ [The 5 Criteria of Cloud Computing](#the-5-criteria-of-cloud-computing)
-- 🟢 [Availability Concepts](#availability-concepts)
-- 📈 [Scaling Concepts](#scaling-concepts)
-- 🧭 [AWS Well-Architected Framework](#aws-well-architected-framework)
-- 🧩 [AWS Cloud Adoption Framework (CAF)](#aws-cloud-adoption-framework-caf)
-- 🚀 [Adoption Strategies](#adoption-strategies)
-- 📦 [The 7 Rs Migration Strategies](#the-7-rs-migration-strategies)
-- 💰 [Cloud Economics and Total Cost of Ownership](#cloud-economics-and-total-cost-of-ownership)
-- 🛡️ [Shared Responsibility Model](#shared-responsibility-model)
-- 🔐 [AWS Access Management Capabilities](#aws-access-management-capabilities)
-- 💸 [AWS Pricing Models & Cost Optimization](#aws-pricing-models--cost-optimization)
-- 🆘 [AWS Technical Resources & Support Options](#aws-technical-resources--support-options)
+- ⛅ [The 5 Criteria of Cloud Computing](#-the-5-criteria-of-cloud-computing)
+- 🟢 [Availability Concepts](#-availability-concepts)
+- 📈 [Scaling Concepts](#s-caling-concepts)
+- 🧭 [AWS Well-Architected Framework](#-aws-well-architected-framework)
+- 🧩 [AWS Cloud Adoption Framework (CAF)](#-aws-cloud-adoption-framework-caf)
+- 🚀 [Adoption Strategies](#-adoption-strategies)
+- 📦 [The 7 Rs Migration Strategies](#-the-7-rs-migration-strategies)
+- 💰 [Cloud Economics and Total Cost of Ownership](#-cloud-economics-and-total-cost-of-ownership)
+- 🛡️ [Shared Responsibility Model](#-shared-responsibility-model)
+- 🔐 [AWS Access Management Capabilities](#-aws-access-management-capabilities)
+- 💸 [AWS Pricing Models & Cost Optimization](#-aws-pricing-models--cost-optimization)
+- 🆘 [AWS Technical Resources & Support Options](#-aws-technical-resources--support-options)
 
-## ⛅ The 5 Criteria of Cloud Computing {#the-5-criteria-of-cloud-computing}
+## ⛅ The 5 Criteria of Cloud Computing
 
 ### Top-Level Intent
 
@@ -102,7 +102,7 @@ AWS automatically tracks and measures resource consumption — compute hours, st
   characteristic of cloud computing?" these 5 are the canonical
   answers.
 
-## 🟢 Availability Concepts {#availability-concepts}
+## 🟢 Availability Concepts
 
 These terms describe different approaches to ensuring systems remain operational under varying levels of stress, failure, or catastrophe. The exam often tests your ability to distinguish between minimizing downtime, eliminating downtime, and surviving large-scale disruptive events.
 
@@ -146,7 +146,7 @@ Designing systems to continue operation—or be restorable—after major regiona
 | Fault tolerance   | Zero downtime                | None                  | Component/AZ | continuous operation, redundant systems |
 | Disaster recovery | Survive large-scale disaster | Varies by strategy    | Region-level | RTO/RPO, regional outage, failover      |
 
-## 📈 Scaling Concepts {#scaling-concepts}
+## 📈 Scaling Concepts
 
 - **Vertical scaling (scale up)** — Increasing the size or power of a single instance (e.g., moving from `t2.micro` to `t2.large`) to handle more load on one machine; simple but limited by maximum instance size.
 - **Horizontal scaling (scale out)** — Adding more instances of the same type (e.g., from 1× `t2.micro` to N× `t2.micro`) to distribute load and improve availability.
@@ -164,7 +164,7 @@ Designing systems to continue operation—or be restorable—after major regiona
 - “Add more instances” → horizontal.
 - “Automatic scaling based on demand” → elasticity.
 
-## 🧭 AWS Well-Architected Framework {#aws-well-architected-framework}
+## 🧭 AWS Well-Architected Framework
 
 The Well-Architected Framework is AWS’s “blueprint for doing cloud right.” It provides principles and best practices across six pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.
 
@@ -404,7 +404,7 @@ This pillar focuses on minimizing the environmental impact of cloud workloads. I
 - “Deploy globally in minutes” = performance efficiency.
 - “Stop guessing capacity” = reliability, unless tied to cost.
 
-## 🧩 AWS Cloud Adoption Framework (CAF) {#aws-cloud-adoption-framework-caf}
+## 🧩 AWS Cloud Adoption Framework (CAF)
 
 The AWS CAF provides a structured way to evaluate and prepare an organization for cloud adoption. It organizes capabilities into six perspectives, each addressing different readiness needs. The exam focuses on recognizing the intention behind each perspective and identifying which one fits a given scenario.
 
@@ -495,7 +495,7 @@ This perspective defines how workloads are run, monitored, and supported after m
 - Questions about ROI or value realization never belong to Platform or Operations — always **Business**.
 - Governance vs Security trick: **SCPs = Governance**, **IAM policies = Security**.
 
-# 🚀 Adoption Strategies {#adoption-strategies}
+# 🚀 Adoption Strategies
 
 ### 🔹 Project
 
@@ -529,7 +529,7 @@ the business operates.
 - Replace legacy jobs with event-driven Lambda pipelines.
 - Build new digital products using AI/ML and microservices.
 
-## 📦 The 7 Rs Migration Strategies {#the-7-rs-migration-strategies}
+## 📦 The 7 Rs Migration Strategies
 
 ### 🔹 Retire
 
@@ -618,7 +618,7 @@ Redesign applications to use cloud‑native features.
 - Refactor → "rewrite," "modernize," "microservices," "serverless,"
   "architectural transformation."
 
-## 💰 Cloud Economics and Total Cost of Ownership {#cloud-economics-and-total-cost-of-ownership}
+## 💰 Cloud Economics and Total Cost of Ownership
 
 TCO represents the full cost of running workloads across their
 lifecycle. Cloud economics focuses on how AWS shifts organizations from
@@ -682,7 +682,7 @@ Licenses for operating systems, databases, and middleware.
 - **General economics** → CAPEX→OPEX shift, elasticity, right-sizing,
   avoid over-provisioning, reduce undifferentiated heavy lifting.
 
-## 🛡️ Shared Responsibility Model {#shared-responsibility-model}
+## 🛡️ Shared Responsibility Model
 
 AWS secures the **cloud itself**, while customers secure **what they run
 in the cloud**. The split depends on whether a service is unmanaged,
@@ -780,7 +780,7 @@ Examples: Lambda, DynamoDB, S3, CloudFront
 - "AWS automatically manages..." → usually refers to fully managed
   services.
 
-## 🔐 AWS Access Management Capabilities {#aws-access-management-capabilities}
+## 🔐 AWS Access Management Capabilities
 
 AWS access management defines how identities authenticate and what
 actions they can perform. Key concepts include the account root user,
@@ -913,7 +913,7 @@ A tool for testing how policies behave before applying them.
 - Federation or SSO → external users assume a role, no IAM users
   created.
 
-## 💸 AWS Pricing Models & Cost Optimization {#aws-pricing-models--cost-optimization}
+## 💸 AWS Pricing Models & Cost Optimization
 
 AWS offers several pricing models arranged by cost efficiency. Choosing
 the right model is a major part of cost optimization and depends on
@@ -1059,7 +1059,7 @@ licensing and compliance scenarios. The most expensive option.
 - "GPU or burst workloads intermittently scheduled" → Capacity
   Reservations
 
-## 🆘 AWS Technical Resources & Support Options {#aws-technical-resources--support-options}
+## 🆘 AWS Technical Resources & Support Options
 
 AWS provides multiple support tiers tailored to different business and
 technical needs. Exams often test response-time differences, 24/7
