@@ -77,30 +77,21 @@ AWS automatically tracks and measures resource consumption — compute hours, st
 
 ### Common Confusions & Pitfalls
 
-- Elasticity is not the same as scalability; exams often hide
-  elasticity as **automatic** scaling.
-- Resource pooling means multi-tenancy --- dedicated hardware
-  contradicts this idea unless explicitly requested.
-- On-demand self-service differs from "manual provisioning"; if humans
-  must approve requests, it is not true cloud.
-- Measured service refers to **automated metering**, not manual cost
-  tracking.
-- Network access does not only mean public internet --- private
-  connectivity still qualifies.
-- Broad network access does not imply "publicly accessible"; secure
-  and private still count.
+- Elasticity is not the same as scalability; exams often hide elasticity as **automatic** scaling.
+- Resource pooling means multi-tenancy --- dedicated hardware contradicts this idea unless explicitly requested.
+- On-demand self-service differs from "manual provisioning"; if humans must approve requests, it is not true cloud.
+- Measured service refers to **automated metering**, not manual cost tracking.
+- Network access does not only mean public internet --- private connectivity still qualifies.
+- Broad network access does not imply "publicly accessible"; secure and private still count.
 
 ### Exam Hints
 
 - "Scale automatically" → Elasticity
 - "Pay only for what you use" → Measured Service
-- "Provision resources without human interaction" → On-Demand
-  Self-Service
+- "Provision resources without human interaction" → On-Demand Self-Service
 - "Available over the internet or through APIs" → Broad Network Access
 - "Shared infrastructure, multi-tenant environment" → Resource Pooling
-- When the question asks, "Which of the following is a fundamental
-  characteristic of cloud computing?" these 5 are the canonical
-  answers.
+- When the question asks, "Which of the following is a fundamental characteristic of cloud computing?" these 5 are the canonical answers.
 
 ## 🟢 Availability Concepts
 
@@ -435,8 +426,7 @@ This pillar focuses on minimizing the environmental impact of cloud workloads. I
   - Both involve automation and incident handling.
   - **Operational Excellence** is about procedures, change management,
     and learning.
-  - **Security** is about access control, encryption, and threat
-    detection.
+  - **Security** is about access control, encryption, and threat detection.
   - Remember: Ops manages change; Security controls access.
 - Security vs Cost Optimization
   - Security measures can increase cost, leading to confusion.
@@ -580,45 +570,33 @@ the business operates.
 
 Remove applications no longer providing value.
 
-- A regional sales reporting tool is shut down after adoption of a
-  unified global analytics platform.
-- An FTP server used by one vendor is removed when the vendor migrates
-  to API-based file exchange.
-- A nightly batch job is eliminated when real-time event streaming
-  replaces its function.
+- A regional sales reporting tool is shut down after adoption of a unified global analytics platform.
+- An FTP server used by one vendor is removed when the vendor migrates to API-based file exchange.
+- A nightly batch job is eliminated when real-time event streaming replaces its function.
 
 ### 🔹 Retain
 
 Keep systems on-premises due to constraints or dependencies.
 
-- A manufacturing control system must remain on-site due to
-  sub-millisecond latency requirements.
-- A legacy mainframe stays on-prem during a multi‑year modernization
-  effort.
-- A hardware‑tied licensing server remains on‑prem because its
-  physical dongle cannot be virtualized.
+- A manufacturing control system must remain on-site due to sub-millisecond latency requirements.
+- A legacy mainframe stays on-prem during a multi‑year modernization effort.
+- A hardware‑tied licensing server remains on‑prem because its physical dongle cannot be virtualized.
 
 ### 🔹 Rehost ("Lift and Shift")
 
 Move workloads to AWS with no code changes.
 
-- 150 VMs are lifted into EC2 due to a data center lease expiring in
-  90 days.
-- A Java monolith is migrated unchanged to EC2 due to limited
-  modernization time.
-- A retail website is moved as‑is to EC2 to leverage Auto Scaling
-  before peak season.
+- 150 VMs are lifted into EC2 due to a data center lease expiring in 90 days.
+- A Java monolith is migrated unchanged to EC2 due to limited modernization time.
+- A retail website is moved as‑is to EC2 to leverage Auto Scaling before peak season.
 
 ### 🔹 Relocate
 
 Move entire VMware estates to VMware Cloud on AWS.
 
-- A bank moves its vSphere clusters to VMware Cloud on AWS to avoid
-  rewriting dozens of applications.
-- A company scales storage capacity by relocating all VMware workloads
-  instead of redesigning apps.
-- A merger consolidates infrastructure rapidly by relocating both
-  companies' VMware environments.
+- A bank moves its vSphere clusters to VMware Cloud on AWS to avoid rewriting dozens of applications.
+- A company scales storage capacity by relocating all VMware workloads instead of redesigning apps.
+- A merger consolidates infrastructure rapidly by relocating both companies' VMware environments.
 
 ### 🔹 Repurchase ("Drop and Shop")
 
@@ -632,19 +610,16 @@ Replace existing software with SaaS.
 
 Make small optimizations during migration.
 
-- A SQL Server instance moves to RDS to eliminate patching while
-  keeping schema.
+- A SQL Server instance moves to RDS to eliminate patching while keeping schema.
 - An app is containerized and run on ECS Fargate without redesign.
-- Static assets are moved to S3 + CloudFront during migration for
-  performance gains.
+- Static assets are moved to S3 + CloudFront during migration for performance gains.
 
 ### 🔹 Refactor / Re‑architect
 
 Redesign applications to use cloud‑native features.
 
 - A monolith becomes microservices on Lambda, SQS, and DynamoDB.
-- A nightly ETL is replaced with Kinesis + Lambda for real‑time
-  processing.
+- A nightly ETL is replaced with Kinesis + Lambda for real‑time processing.
 - A legacy CMS is rebuilt as a serverless API backend.
 
 ### Exam Hints
@@ -652,12 +627,9 @@ Redesign applications to use cloud‑native features.
 - Retire → "no longer needed," "duplicate," "deprecated."
 - Retain → "cannot migrate yet," "latency/hardware constraint,"
   "compliance barrier."
-- Rehost → "as‑is," "lift and shift," "minimal changes," "deadline
-  pressure."
-- Relocate → "VMware Cloud on AWS," "keep vCenter/vMotion," "move
-  entire VMware environment."
-- Repurchase → "replace with SaaS," "drop and shop," "move to
-  Salesforce/Jira Cloud."
+- Rehost → "as‑is," "lift and shift," "minimal changes," "deadline pressure."
+- Relocate → "VMware Cloud on AWS," "keep vCenter/vMotion," "move entire VMware environment."
+- Repurchase → "replace with SaaS," "drop and shop," "move to Salesforce/Jira Cloud."
 - Replatform → "minor improvements," "move DB to RDS," "containerize,"
   "small optimizations."
 - Refactor → "rewrite," "modernize," "microservices," "serverless,"
@@ -691,25 +663,21 @@ migration.
 
 Human effort required to operate and maintain infrastructure.
 
-- Sysadmins no longer patch OS instances after switching to RDS and
-  Lambda.
+- Sysadmins no longer patch OS instances after switching to RDS and Lambda.
 - Ops teams stop swapping failed hardware because AWS handles it.
-  Engineers transition from managing VMware clusters to cloud
-  automation.
+  Engineers transition from managing VMware clusters to cloud automation.
 
 ### 🔸 Software Licensing Costs
 
 Licenses for operating systems, databases, and middleware.
 
 - Eliminating SQL Server licensing by moving to Aurora PostgreSQL.
-- Reducing Windows Server licensing by switching EC2 instances to
-  Amazon Linux.
+- Reducing Windows Server licensing by switching EC2 instances to Amazon Linux.
 - Replacing a costly monitoring suite with CloudWatch and X-Ray.
 
 ### Pitfalls & Confusions
 
-- Cloud reduces **CAPEX**, but **OPEX can increase** without
-  optimization.
+- Cloud reduces **CAPEX**, but **OPEX can increase** without optimization.
 - Managed services reduce labor but may increase direct service cost.
 - Lift-and-shift migrations often retain expensive licenses.
 - Underutilized cloud resources still waste money.
@@ -718,12 +686,9 @@ Licenses for operating systems, databases, and middleware.
 ### Exam Hints
 
 - **OPEX** → pay-as-you-go, variable usage, monthly billing.
-- **CAPEX** → upfront server purchases, hardware refresh cycles, data
-  center buildouts.
-- **Labor** → patching, maintenance, operational overhead; automation
-  reduces these costs.
-- **Licensing** → OS/DB licensing impact; managed services reduce
-  proprietary license requirements.
+- **CAPEX** → upfront server purchases, hardware refresh cycles, data center buildouts.
+- **Labor** → patching, maintenance, operational overhead; automation reduces these costs.
+- **Licensing** → OS/DB licensing impact; managed services reduce proprietary license requirements.
 - **General economics** → CAPEX→OPEX shift, elasticity, right-sizing,
   avoid over-provisioning, reduce undifferentiated heavy lifting.
 
@@ -737,10 +702,8 @@ managed, or fully managed.
 
 You control configuration, data, access, and application security.
 
-- The security team rotates IAM access keys and enforces MFA --- AWS
-  never handles identity governance.
-- The DevOps team configures S3 bucket policies and encryption; AWS
-  does not block insecure policies automatically.
+- The security team rotates IAM access keys and enforces MFA --- AWS never handles identity governance.
+- The DevOps team configures S3 bucket policies and encryption; AWS does not block insecure policies automatically.
 - A product team classifies and secures sensitive data in DynamoDB ---
   AWS never inspects customer data.
 
@@ -750,43 +713,32 @@ AWS controls and operates the foundational infrastructure.
 
 - AWS maintains physical data centers, including access controls,
   power, and cooling.
-- AWS patches and upgrades the hypervisor and underlying compute
-  hardware.
-- AWS ensures regional networking, availability zone isolation, and S3
-  durability replication.
+- AWS patches and upgrades the hypervisor and underlying compute hardware.
+- AWS ensures regional networking, availability zone isolation, and S3 durability replication.
 
 ### 🔹Unmanaged Services (Customer controls more)
 
 Examples: EC2, EBS, VPC
 
-- Ops teams patch the OS on EC2 because AWS only manages the hardware
-  beneath it.
-- Database administrators install, configure, and update databases
-  running on EC2.
-- Network engineers configure routing tables, security groups, and
-  NACLs.
+- Ops teams patch the OS on EC2 because AWS only manages the hardware beneath it.
+- Database administrators install, configure, and update databases running on EC2.
+- Network engineers configure routing tables, security groups, and NACLs.
 
 ### 🔹Managed Services (Shared control)
 
 Examples: RDS, ECS, EKS
 
-- AWS patches the RDS database engine, while DB teams manage schema
-  design and query timing.
-- AWS maintains the ECS control plane, while developers configure IAM
-  roles, task definitions, and autoscaling.
-- AWS runs the EKS Kubernetes control plane, but platform engineers
-  secure worker nodes and pod-level policies.
+- AWS patches the RDS database engine, while DB teams manage schema design and query timing.
+- AWS maintains the ECS control plane, while developers configure IAM roles, task definitions, and autoscaling.
+- AWS runs the EKS Kubernetes control plane, but platform engineers secure worker nodes and pod-level policies.
 
 ### 🔹Fully Managed Services (AWS controls most)
 
 Examples: Lambda, DynamoDB, S3, CloudFront
 
-- AWS manages all server infrastructure for Lambda; developers focus
-  only on code and IAM permissions.
-- AWS handles DynamoDB scaling, patching, and replication, while teams
-  design tables and access controls.
-- AWS ensures S3 durability and replication; customers configure
-  bucket policies, encryption, and lifecycle rules.
+- AWS manages all server infrastructure for Lambda; developers focus only on code and IAM permissions.
+- AWS handles DynamoDB scaling, patching, and replication, while teams design tables and access controls.
+- AWS ensures S3 durability and replication; customers configure bucket policies, encryption, and lifecycle rules.
 
 ### Common Confusions & Pitfalls
 
@@ -795,35 +747,27 @@ Examples: Lambda, DynamoDB, S3, CloudFront
 - AWS patches OS **only** for fully managed runtimes (Lambda,
   Fargate), _not_ for EC2.
 - Misconfigured S3 buckets or IAM policies are always customer faults.
-- Logging is not automatic --- customers must enable CloudTrail, VPC
-  Flow Logs, and application logs.
-- Encryption responsibilities are shared: customers must turn it on
-  and configure keys; AWS manages the infrastructure.
-- Physical security, hardware maintenance, regional isolation, and
-  backbone networking are always AWS responsibilities.
+- Logging is not automatic --- customers must enable CloudTrail, VPC Flow Logs, and application logs.
+- Encryption responsibilities are shared: customers must turn it on and configure keys; AWS manages the infrastructure.
+- Physical security, hardware maintenance, regional isolation, and backbone networking are always AWS responsibilities.
 
 ### Exam Hints
 
 - Customer → IAM, access control, data security, EC2 OS patching,
   network configuration, enable encryption.
-- Customer → enable CloudTrail, configure bucket policies, manage
-  app-layer vulnerabilities.
+- Customer → enable CloudTrail, configure bucket policies, manage app-layer vulnerabilities.
 - AWS → physical facilities, hardware, hypervisor, global networking,
   AZ/Region design.
 - Unmanaged → EC2/EBS/VPC → customer manages OS, runtime, patches,
   network rules.
-- Managed → RDS/EKS/ECS → AWS manages platform; customer manages
-  configuration and data.
-- Fully managed → Lambda/S3/DynamoDB → AWS handles servers; customer
-  handles data and permissions.
+- Managed → RDS/EKS/ECS → AWS manages platform; customer manages configuration and data.
+- Fully managed → Lambda/S3/DynamoDB → AWS handles servers; customer handles data and permissions.
 - "Public S3 bucket," "overly permissive IAM," "unencrypted data" →
   customer issue.
-- "Hardware failure," "data center outage," "facility access" → AWS
-  responsibility.
+- "Hardware failure," "data center outage," "facility access" → AWS responsibility.
 - "Who enables logging?" → customer.
 - "Who secures customer data?" → customer.
-- "AWS automatically manages..." → usually refers to fully managed
-  services.
+- "AWS automatically manages..." → usually refers to fully managed services.
 
 ## 🔐 AWS Access Management Capabilities
 
@@ -837,12 +781,9 @@ The AWS account is the primary isolation and billing boundary. The root
 user has unrestricted permissions and should be used only when a task
 cannot be delegated.
 
-- Only the root user can close the AWS account or change the support
-  plan.
-- A security engineer must use the root identity to enable S3 MFA
-  Delete.
-- Payment methods and tax documents can only be modified by the root
-  user.
+- Only the root user can close the AWS account or change the support plan.
+- A security engineer must use the root identity to enable S3 MFA Delete.
+- Payment methods and tax documents can only be modified by the root user.
 
 ### Users, Groups, and Roles
 
@@ -859,11 +800,9 @@ rely on long-lived credentials.
   - Should rarely have permissions attached directly.
   - Protected with MFA.
 - Examples
-  - A developer logs in to the console using their IAM user for daily
-    tasks.
+  - A developer logs in to the console using their IAM user for daily tasks.
   - A support engineer uses an IAM user to troubleshoot CloudWatch logs.
-  - A legacy build pipeline temporarily uses an IAM user's access keys
-    until refactored to use roles.
+  - A legacy build pipeline temporarily uses an IAM user's access keys until refactored to use roles.
 
 ### Groups
 
@@ -874,12 +813,9 @@ Used to organize users and assign permissions collectively.
   - Users can belong to multiple groups.
   - Policies should be attached at the group level.
 - Examples
-  - A "Developers" group grants access to dev resources like S3 buckets
-    and Lambda test functions.
-  - A "ReadOnlyAuditors" group provides global read-only access for
-    internal audits.
-  - A "NetworkAdmins" group manages VPC security groups and route
-    tables.
+  - A "Developers" group grants access to dev resources like S3 buckets and Lambda test functions.
+  - A "ReadOnlyAuditors" group provides global read-only access for internal audits.
+  - A "NetworkAdmins" group manages VPC security groups and route tables.
 
 ### Roles
 
@@ -888,16 +824,12 @@ identities. Roles have no long-term credentials.
 
 - Characteristics
   - Provide short-lived credentials through STS.
-  - Assumed by services, applications, or users who need temporary
-    privilege elevation.
+  - Assumed by services, applications, or users who need temporary privilege elevation.
   - Used for automation, cross-account access, and federation.
 - Examples
-  - A Lambda function assumes an execution role to read items from
-    DynamoDB.
-  - An EC2 instance uses its instance role to upload logs to S3 without
-    storing access keys.
-  - A developer from one AWS account assumes a role in another account
-    to deploy resources there.
+  - A Lambda function assumes an execution role to read items from DynamoDB.
+  - An EC2 instance uses its instance role to upload logs to S3 without storing access keys.
+  - A developer from one AWS account assumes a role in another account to deploy resources there.
 
 ### Managed and Customer-Managed Policies
 
@@ -906,12 +838,9 @@ provide convenience; customer-managed policies enable precise control.
 
 #### Examples
 
-- A team attaches the AWS-managed "AmazonEC2ReadOnlyAccess" policy for
-  quick onboarding.
-- A security engineer writes a customer-managed policy allowing access
-  only to specific S3 prefixes.
-- A compliance team sets a permissions boundary to ensure developers
-  cannot escalate themselves.
+- A team attaches the AWS-managed "AmazonEC2ReadOnlyAccess" policy for quick onboarding.
+- A security engineer writes a customer-managed policy allowing access only to specific S3 prefixes.
+- A compliance team sets a permissions boundary to ensure developers cannot escalate themselves.
 
 ### IAM Policy Simulator
 
@@ -919,44 +848,32 @@ A tool for testing how policies behave before applying them.
 
 #### Examples
 
-- A developer tests whether a Lambda execution role can write logs to
-  CloudWatch.
-- A security engineer verifies a deny condition blocks access to a
-  restricted S3 bucket.
-- A DevOps team checks that a cross-account deployment role has all
-  required permissions.
+- A developer tests whether a Lambda execution role can write logs to CloudWatch.
+- A security engineer verifies a deny condition blocks access to a restricted S3 bucket.
+- A DevOps team checks that a cross-account deployment role has all required permissions.
 
 ### Common Confusions & Pitfalls
 
-- Users are for humans; roles are for temporary access by services or
-  external identities.
+- Users are for humans; roles are for temporary access by services or external identities.
 - Groups are for permission assignment, not authentication.
-- The root user cannot be restricted and should not be used for daily
-  operations.
+- The root user cannot be restricted and should not be used for daily operations.
 - Explicit deny overrides allow.
-- EC2 instance roles provide temporary credentials; keys should never
-  be stored on the server.
-- Cross-account access requires assuming a role, not sharing IAM user
-  credentials.
-- IAM permissions do not grant network access; SGs and NACLs are
-  separate layers.
+- EC2 instance roles provide temporary credentials; keys should never be stored on the server.
+- Cross-account access requires assuming a role, not sharing IAM user credentials.
+- IAM permissions do not grant network access; SGs and NACLs are separate layers.
 
 ### Exam Hints
 
 - Root user → close account, modify payment, enable MFA Delete.
-- Users → long-term identities; secured with MFA; avoid inline user
-  policies.
+- Users → long-term identities; secured with MFA; avoid inline user policies.
 - Groups → simplify permission management; cannot nest.
-- Roles → temporary credentials; used by AWS services and
-  cross-account access.
+- Roles → temporary credentials; used by AWS services and cross-account access.
 - AWS-managed policies → broad and convenient.
 - Customer-managed policies → tailored to least privilege.
 - Policy Simulator → test effective permissions.
 - Least privilege → almost always the correct exam answer.
-- "Temporary access required" or "service needs permissions" → use a
-  role.
-- Federation or SSO → external users assume a role, no IAM users
-  created.
+- "Temporary access required" or "service needs permissions" → use a role.
+- Federation or SSO → external users assume a role, no IAM users created.
 
 ## 💸 AWS Pricing Models & Cost Optimization
 
@@ -965,65 +882,52 @@ the right model is a major part of cost optimization and depends on
 workload predictability, tolerance for interruptions, tenancy
 requirements, and licensing constraints.
 
+The listing is ordered by cost.
+
 ### 🔹Spot Instances
 
 Deeply discounted spare EC2 capacity with interruption risk. Best for
 fault-tolerant or flexible workloads.
 
-- A video transcoding system uses Spot since jobs can retry
-  automatically if an instance is reclaimed.
-- A data science team runs large Monte Carlo simulations overnight
-  using Spot Fleet for massive savings.
-- A CI/CD system uses Spot for non-critical build agents, falling back
-  to on-demand when Spot is unavailable.
+- A video transcoding system uses Spot since jobs can retry automatically if an instance is reclaimed.
+- A data science team runs large Monte Carlo simulations overnight using Spot Fleet for massive savings.
+- A CI/CD system uses Spot for non-critical build agents, falling back to on-demand when Spot is unavailable.
 
 ### 🔹Savings Plans
 
 Commit to a consistent hourly spend for 1--3 years. Most flexible
 discount model, applies to EC2, Fargate, and Lambda.
 
-- A platform engineering team moves to Savings Plans while gradually
-  shifting workloads from EC2 to Lambda.
-- A product team with diverse compute workloads (ECS + Lambda) uses a
-  3-year Compute Savings Plan for predictable costs.
-- A company migrating instance families frequently chooses Savings
-  Plans to avoid managing multiple RI types.
+- A platform engineering team moves to Savings Plans while gradually shifting workloads from EC2 to Lambda.
+- A product team with diverse compute workloads (ECS + Lambda) uses a 3-year Compute Savings Plan for predictable costs.
+- A company migrating instance families frequently chooses Savings Plans to avoid managing multiple RI types.
 
 ### 🔹Reserved Instances (Standard RIs)
 
 1--3 year commitment for high discounts. Ideal for steady, predictable
 workloads.
 
-- A billing service running 24/7 is covered with 3-year Standard RIs
-  to cut predictable compute cost.
-- A database team commits to RIs for stable RRDS instances that won't
-  change size in the foreseeable future.
-- A corporate intranet server that runs continuously is placed under
-  RIs for long-term savings.
+- A billing service running 24/7 is covered with 3-year Standard RIs to cut predictable compute cost.
+- A database team commits to RIs for stable RRDS instances that won't change size in the foreseeable future.
+- A corporate intranet server that runs continuously is placed under RIs for long-term savings.
 
 ### 🔹Convertible Reserved Instances
 
 Similar to RIs but allow changing instance families, OS, or tenancy.
 Slightly smaller discount than Standard RIs.
 
-- A modernization team switches EC2 instance families during
-  refactoring without losing Reserved Instance benefits.
-- A company changes from Windows to Linux AMIs and updates the RI type
-  instead of buying new reservations.
-- An analytics system scaling vertically over time upgrades instance
-  sizes using Convertible RIs.
+- A modernization team switches EC2 instance families during refactoring without losing Reserved Instance benefits.
+- A company changes from Windows to Linux AMIs and updates the RI type instead of buying new reservations.
+- An analytics system scaling vertically over time upgrades instance sizes using Convertible RIs.
 
 ### 🔹Zonal Reserved Instances
 
 RIs tied to a specific Availability Zone. Provide both cost savings and
 a capacity reservation.
 
-- A financial trading application with strict AZ affinity secures
-  capacity during market peaks.
-- A healthcare system guarantees AZ availability before planned
-  seasonal patient load increases.
-- A company with strict compliance runs a legacy app in a fixed AZ and
-  uses Zonal RIs to lock in both price and capacity.
+- A financial trading application with strict AZ affinity secures capacity during market peaks.
+- A healthcare system guarantees AZ availability before planned seasonal patient load increases.
+- A company with strict compliance runs a legacy app in a fixed AZ and uses Zonal RIs to lock in both price and capacity.
 
 ### 🔹On-Demand Instances
 
@@ -1031,68 +935,48 @@ Pay by the hour or second with no commitment. Best for short-lived or
 unpredictable workloads.
 
 - A developer tests new architectures in EC2 without any commitments.
-- A sudden traffic surge uses on-demand instances until Auto Scaling
-  brings online additional capacity.
-- A data migration team runs temporary EC2 instances for a multi-day
-  transfer job.
+- A sudden traffic surge uses on-demand instances until Auto Scaling brings online additional capacity.
+- A data migration team runs temporary EC2 instances for a multi-day transfer job.
 
 ### 🔹Capacity Reservations
 
 Guarantee capacity in a specific AZ with no long-term commitment. Still
 billed at on-demand rates unless paired with RIs or Savings Plans.
 
-- A ticketing platform reserves capacity ahead of a major event to
-  guarantee availability.
-- A financial application reserves capacity during quarter-end batch
-  processing windows.
-- A research lab running GPU workloads reserves capacity for scheduled
-  simulation days.
+- A ticketing platform reserves capacity ahead of a major event to guarantee availability.
+- A financial application reserves capacity during quarter-end batch processing windows.
+- A research lab running GPU workloads reserves capacity for scheduled simulation days.
 
 ### 🔹Dedicated Instances
 
-Run workloads on hardware isolated to a single customer. Provides
-tenancy isolation but not licensing benefits.
+Run workloads on hardware isolated to a single customer. Provides tenancy isolation but not licensing benefits.
 
-- A regulated company isolates workloads for compliance, avoiding
-  shared tenancy.
-- A latency-sensitive system avoids noisy neighbors by using dedicated
-  tenancy.
-- A customer uses dedicated instances to meet internal security
-  policies requiring isolated tenancy.
+- A regulated company isolates workloads for compliance, avoiding shared tenancy.
+- A latency-sensitive system avoids noisy neighbors by using dedicated tenancy.
+- A customer uses dedicated instances to meet internal security policies requiring isolated tenancy.
 
 ### 🔹Dedicated Hosts
 
-Physical servers fully allocated to you. Required for certain BYOL
-licensing and compliance scenarios. The most expensive option.
+Physical servers fully allocated to you. Required for certain BYOL licensing and compliance scenarios. The most expensive option.
 
-- A company brings SQL Server Enterprise licenses that require
-  tracking cores/sockets.
-- A security audit demands host-level visibility unavailable on
-  standard EC2.
-- A legacy enterprise application with strict hardware-binding
-  licensing runs on a Dedicated Host.
+- A company brings SQL Server Enterprise licenses that require tracking cores/sockets.
+- A security audit demands host-level visibility unavailable on standard EC2.
+- A legacy enterprise application with strict hardware-binding licensing runs on a Dedicated Host.
 
 ### Common Confusions & Pitfalls
 
-- RIs and Savings Plans lower cost, but do not guarantee capacity.
-  Only Zonal RIs and Capacity Reservations do.
-- Spot Instances can be interrupted --- exam questions often hide
-  "fault-tolerant" or "can retry jobs" as clues.
-- Savings Plans apply across compute types; RIs are tied to instance
-  families or platforms unless convertible.
-- Dedicated Instances are not the same as Dedicated Hosts --- only
-  Dedicated Hosts provide license tracking and host visibility.
-- Capacity Reservations without a discount still incur on-demand cost
-  unless paired with RIs or Savings Plans.
-- The cheapest option is not always the correct answer; exam scenarios
-  care about predictability and compliance.
+- RIs and Savings Plans lower cost, but do not guarantee capacity. Only Zonal RIs and Capacity Reservations do.
+- Spot Instances can be interrupted --- exam questions often hide "fault-tolerant" or "can retry jobs" as clues.
+- Savings Plans apply across compute types; RIs are tied to instance families or platforms unless convertible.
+- Dedicated Instances are not the same as Dedicated Hosts --- only Dedicated Hosts provide license tracking and host visibility.
+- Capacity Reservations without a discount still incur on-demand cost unless paired with RIs or Savings Plans.
+- The cheapest option is not always the correct answer; exam scenarios care about predictability and compliance.
 - Zonal RIs = discount + reservation; Standard RIs = discount only.
 
 ### Exam Hints
 
 - "Workload can tolerate interruptions" → Spot
-- "Commitment but want flexibility across compute services" → Savings
-  Plans
+- "Commitment but want flexibility across compute services" → Savings Plans
 - "Steady-state, predictable workload" → Standard RIs
 - "Need to change instance family or OS later" → Convertible RIs
 - "Need AZ capacity guarantee" → Zonal RI or Capacity Reservation
@@ -1101,62 +985,54 @@ licensing and compliance scenarios. The most expensive option.
 - "Compliance or licensing visibility needed" → Dedicated Hosts
 - "Transitioning architectures (EC2 → Lambda)" → Savings Plans
 - "Company prefers cost predictability" → RIs or Savings Plans
-- "GPU or burst workloads intermittently scheduled" → Capacity
-  Reservations
+- "GPU or burst workloads intermittently scheduled" → Capacity Reservations
 
 ## 🆘 AWS Technical Resources & Support Options
 
-AWS provides multiple support tiers tailored to different business and
-technical needs. Exams often test response-time differences, 24/7
-availability, and TAM access.
+AWS provides multiple support tiers tailored to different business and technical needs. Exams often test response-time differences, 24/7 availability, and TAM access.
 
 ### 🔸Basic Support
 
-Included for free with all AWS accounts; provides no technical
-troubleshooting.
+Included for free with all AWS accounts; provides no technical troubleshooting.
 
 - Characteristics
-  - No access to AWS support engineers
+  - **No access** to support engineers
   - Billing & account support only
   - "Best effort" responses
-  - Trusted Advisor core checks only
+  - Trusted Advisor **core checks**
 - Examples
   - A hobbyist hosts a personal website with Basic support.
   - A startup in prototyping relies solely on documentation and forums.
-  - A student or training environment uses Basic support with no urgency
-    requirements.
+  - A student or training environment uses Basic support with no urgency requirements.
 
 ### 🔸Developer Support
 
-Designed for early development work; **business-hours** support only.
+Designed for early development work; business-hours support only.
 
 - Characteristics
-  - Email access to support engineers during business hours
-  - Response within 24 business hours
+  - **Email** access to support engineers during **business hours**
+  - Response within **24 business hours**
   - No production-critical guidance
   - Trusted Advisor core checks
 - Examples
-  - A small team building an MVP sends occasional architecture
-    questions.
+  - A small team building an MVP sends occasional architecture questions.
   - A developer debugging Lambda issues files non-urgent tickets.
-  - A testing environment where downtime is not critical uses Developer
-    support.
+  - A testing environment where downtime is not critical uses Developer support.
 
 ### 🔸Business Support
 
 Suitable for production workloads needing 24/7 coverage.
 
 - Characteristics
-  - **24/7** access to Cloud Support Engineers
-  - 1-hour response for production system down
-  - Full Trusted Advisor checks
+  - **Email, phone, chat** access to support engineers **24/7**
+  - **1-hour** response for production system down (severity 1)
+  - **4-hour** response for production system impaired (severity 2)
+  - Trusted Advisor **full checks**
   - Access to IEM (pay-per-use)
   - Architectural guidance for production systems
 - Examples
-  - An e-commerce store running production requires immediate help if
-    checkout fails.
-  - A SaaS platform preparing for a major release requests IEM
-    assistance.
+  - An e-commerce store running production requires immediate help if checkout fails.
+  - A SaaS platform preparing for a major release requests IEM assistance.
   - A company with global users relies on 24/7 support for outages.
 
 ### 🔸Enterprise On-Ramp Support
@@ -1169,15 +1045,11 @@ operations.
   - Access to a pool of TAMs (not dedicated)
   - Proactive architectural and operational reviews
   - Discounted IEM
-  - Ideal for organizations growing but not yet requiring full
-    Enterprise support
+  - Ideal for organizations growing but not yet requiring full Enterprise support
 - Examples
-  - A healthcare startup expects rapid scaling and wants proactive
-    guidance.
-  - A fintech company running customer workloads wants stronger
-    escalation paths.
-  - A mid-sized SaaS moving toward regulatory compliance seeks early TAM
-    engagement.
+  - A healthcare startup expects rapid scaling and wants proactive guidance.
+  - A fintech company running customer workloads wants stronger escalation paths.
+  - A mid-sized SaaS moving toward regulatory compliance seeks early TAM engagement.
 
 ### 🔸Enterprise Support
 
@@ -1185,37 +1057,31 @@ Top-tier support for mission-critical, large-scale AWS environments.
 
 - Characteristics
   - **Dedicated Technical Account Manager (TAM)**
-  - 15-minute response for critical issues
+  - **15-minute** response for critical issues
   - IEM included
   - Concierge billing + governance support
   - Proactive architectural reviews (e.g., Well-Architected)
   - Best for highly regulated or global mission-critical workloads
 - Examples
-  - A global retailer prepares Black Friday with TAM-led scaling
-    reviews.
-  - A bank operating 24/7 transactional systems requires near-immediate
-    escalation.
-  - A healthcare organization undergoing compliance audits depends on
-    Enterprise architectural guidance.
+  - A global retailer prepares Black Friday with TAM-led scaling reviews.
+  - A bank operating 24/7 transactional systems requires near-immediate escalation.
+  - A healthcare organization undergoing compliance audits depends on Enterprise architectural guidance.
 
 ### Common Confusions & Pitfalls
 
 - Developer = **business-hours only**.
-- Only Business, Enterprise On-Ramp, Enterprise = **24/7 support**.
+- Only Business, Enterprise On-Ramp, Enterprise = **24/7 support**, also by phone.
 - Only Enterprise = **Dedicated TAM**.
 - Trusted Advisor full checks start at Business tier.
-- Developer and Basic support levels do NOT include architectural
-  guidance.
-- IEM included only with Enterprise; On-Ramp gets discounts; Business
-  pays per event.
+- Developer and Basic support levels do NOT include architectural guidance.
+- IEM included only with Enterprise; On-Ramp gets discounts; Business pays per event.
 - "Production workload" strongly implies Business or higher.
 
 ### Exam Hints
 
 - "Needs 24/7 support for production" → Business
 - "Needs a dedicated TAM" → Enterprise
-- "Proactive guidance but not full Enterprise cost" → Enterprise
-  On-Ramp
+- "Proactive guidance but not full Enterprise cost" → Enterprise On-Ramp
 - "Office hours support is fine" → Developer
 - "No cost support" → Basic
 - "Preparing for major event launch" → Business + IEM or Enterprise
