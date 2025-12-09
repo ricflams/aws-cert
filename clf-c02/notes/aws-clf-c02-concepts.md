@@ -404,6 +404,51 @@ This pillar focuses on minimizing the environmental impact of cloud workloads. I
 - “Deploy globally in minutes” = performance efficiency.
 - “Stop guessing capacity” = reliability, unless tied to cost.
 
+### How the Six WAF Pillars Are Commonly Confused
+
+- Operational Excellence vs Reliability
+  - Both involve handling failures and improving systems.
+  - **Operational Excellence** focuses on people, processes, deployments, and runbooks.
+  - **Reliability** focuses on redundancy, fault tolerance, multi-AZ, and automated recovery.
+  - Remember: Ops cares about how you work; Reliability cares about whether your system works.
+- Security vs Reliability
+  - Both mention resilience but in different contexts.
+  - **Security** protects data and access from threats.
+  - **Reliability** protects availability during failures.
+  - Remember: Security keeps bad things out; Reliability keeps good things running.
+- Performance Efficiency vs Cost Optimization
+  - Both involve selecting instance types and architectures.
+  - **Performance Efficiency** optimizes for speed, throughput, and scaling.
+  - **Cost Optimization** minimizes spending while meeting requirements.
+  - Remember: Performance saves time; Cost saves money.
+- Performance Efficiency vs Sustainability
+  - Both mention efficient resource usage.
+  - **Performance Efficiency** is about using technology to meet performance goals.
+  - **Sustainability** is about reducing energy use and environmental impact.
+  - Remember: Performance saves time; Sustainability saves the planet.
+- Cost Optimization vs Sustainability
+  - Both focus on reducing waste.
+  - **Cost Optimization** targets financial waste.
+  - **Sustainability** targets environmental waste.
+  - Remember: Cut cost ≠ cut carbon.
+- Operational Excellence vs Security
+  - Both involve automation and incident handling.
+  - **Operational Excellence** is about procedures, change management,
+    and learning.
+  - **Security** is about access control, encryption, and threat
+    detection.
+  - Remember: Ops manages change; Security controls access.
+- Security vs Cost Optimization
+  - Security measures can increase cost, leading to confusion.
+  - **Security** requirements are non-negotiable.
+  - **Cost Optimization** operates within those constraints.
+  - Remember: Security is mandatory; cost is adjustable.
+- Reliability vs Performance Efficiency
+  - Both use scaling and distributed architectures.
+  - **Reliability** focuses on surviving failures.
+  - **Performance Efficiency** focuses on handling load effectively.
+  - Remember: Reliability handles failures; Performance handles load.
+
 ## 🧩 AWS Cloud Adoption Framework (CAF)
 
 The AWS CAF provides a structured way to evaluate and prepare an organization for cloud adoption. It organizes capabilities into six perspectives, each addressing different readiness needs. The exam focuses on recognizing the intention behind each perspective and identifying which one fits a given scenario.
