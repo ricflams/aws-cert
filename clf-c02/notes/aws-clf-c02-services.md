@@ -4188,13 +4188,6 @@ AWS Compute Optimizer is a fully managed recommendation service that analyzes hi
 - Analyzes CloudWatch utilization trends
 - Supports EC2, ASGs, EBS volumes, Lambda
 
-#### Capabilities
-
-- Identifies over/under-provisioned resources
-- Suggests optimal instance types and sizes
-- Helps reduce cost through rightsizing
-- Provides performance risk scores
-
 #### Pricing Model
 
 - Free tier for basic recommendations
@@ -4208,14 +4201,10 @@ AWS Compute Optimizer is a fully managed recommendation service that analyzes hi
 
 ### 6. Confusable Services
 
-- AWS Trusted Advisor - Compute Optimizer: ML-based deep rightsizing - Trusted Advisor: broader checklist-based best-practice checks
-  -AWS Cost Explorer - Cost Explorer: analyzes spending trends - Compute Optimizer: analyzes utilization for rightsizing
-- Amazon EC2 Auto Scaling
-  - Auto Scaling: adjusts capacity
-  - Compute Optimizer: recommends optimal instance configurations
-- AWS Pricing Calculator
-  - Pricing Calculator: estimates future cost
-  - Compute Optimizer: recommends configurations based on usage data
+- AWS Trusted Advisor use broader checklist-based best-practice checks, while CO use ML-based deep rightsizing
+- AWS Cost Explorer analyzes spending trends, while CO analyzes utilization for rightsizing
+- Amazon EC2 Auto Scaling adjusts capacity, while CO recommends optimal instance configurations
+- AWS Pricing Calculator estimates future cost, while CO recommends configurations based on usage data
 
 ### 7. Exam Notes
 
