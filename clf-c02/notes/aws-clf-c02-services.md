@@ -23,6 +23,10 @@
 
 # 🖥️ Compute
 
+Compute is about **actually running your application’s code**—on servers, containers, or serverless functions.
+It gives you the processing power your workloads need, whenever they need it.
+Its core intent is to execute code efficiently, elastically, and in the form that best fits your architecture.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-EC2_16.png) Amazon EC2
 
 Amazon Elastic Compute Cloud (EC2) provides resizable compute capacity in the cloud.
@@ -784,6 +788,10 @@ Amazon API Gateway is a managed service for building and managing APIs at scale.
 
 # 🌐 Networking and Content Delivery
 
+Networking controls **how data travels** between users, services, and systems.
+It ensures your applications are reachable, secure, and fast no matter where your customers are.
+Its core intent is to provide reliable connections and global content delivery with low latency.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-Virtual-Private-Cloud_16.png) Amazon VPC
 
 Amazon Virtual Private Cloud (VPC) provides logically isolated virtual networks in AWS with full control over IP addressing, routing, and security.
@@ -1396,6 +1404,10 @@ AWS Global Accelerator routes user traffic over the AWS global backbone instead 
 
 # 💾 Storage
 
+Storage is responsible for **keeping data safe and durable** for as long as needed.
+It stores files, objects, backups, and block data across multiple storage models.
+Its core intent is to provide scalable, reliable places to put data—short-term or forever.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-Simple-Storage-Service_16.png) Amazon S3
 
 Object storage service offering high durability, scalability, and global accessibility.
@@ -1802,6 +1814,10 @@ Physical devices for offline or edge data transfer and edge compute.
 
 # 🗄️ Databases
 
+Databases **organize and retrieve application data** with speed and correctness.
+They structure data in tables, documents, key-value stores, graphs, or time‑series formats.
+Their core intent is to deliver fast, consistent access to well-managed data.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-RDS_16.png) Amazon RDS
 
 Managed relational database service supporting Amazon Aurora, MySQL, PostgreSQL, MariaDB, Oracle, SQL Server.
@@ -2150,6 +2166,10 @@ Amazon Redshift is a massively parallel processing (MPP) data warehouse optimize
 ---
 
 # 🤖 AI and Machine Learning
+
+AI and ML services **find patterns, make predictions, and automate decisions** using your data.
+They offer everything from prebuilt AI APIs to full ML training and hosting platforms.
+Their core intent is to bring intelligent behavior into applications without requiring deep ML expertise.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Comprehend_16.png) Amazon Comprehend
 
@@ -2745,6 +2765,10 @@ Amazon Q Developer provides AI-assisted code generation, refactoring, debugging 
 
 # 📈 Analytics
 
+Analytics services **collect, process, and interpret data** at any scale.
+They let you query massive datasets, stream real-time information, and build dashboards.
+Their core intent is to turn raw data into insights you can act on.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Athena_16.png) Amazon Athena
 
 Serverless interactive query service for analyzing data in Amazon S3 using standard SQL.
@@ -3068,6 +3092,10 @@ Amazon OpenSearch Service provides full-text search, log analytics, dashboards, 
 ---
 
 # 🔐 Security, Identity and Compliance
+
+Security services **control access, protect data, and detect threats** across your cloud environment.
+They enforce identities, permissions, encryption, logging, and compliance requirements.
+Their core intent is to keep workloads safe and aligned with organizational and regulatory standards.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Identity-and-Access-Management_16.png) AWS Identity and Access Management (IAM)
 
@@ -3736,6 +3764,10 @@ IAM Access Analyzer identifies unintended public or cross-account access in poli
 
 # 🛠️ Management and Governance
 
+Management and Governance tools **monitor, optimize, and standardize cloud operations**.
+They help you control cost, enforce policies, manage configurations, and view operational health.
+Their core intent is to run AWS environments predictably, efficiently, and at scale.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-CloudFormation_16.png) AWS CloudFormation
 
 ### 1. Definition
@@ -4108,6 +4140,94 @@ Trusted Advisor provides automated best-practice checks covering cost optimizati
 
 - “Cost optimization,” “support plan required” → Trusted Advisor
 
+## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Compute-Optimizer_16.png) AWS Compute Optimizer
+
+Machine learning–powered recommendations to rightsize AWS resources for better performance and cost efficiency.
+
+### 1. Definition
+
+AWS Compute Optimizer is fundamentally about:
+
+- Rightsizing resources
+- Reducing cost
+- Improving cost-to-performance efficiency
+- Using utilization data (from CloudWatch) to inform decisions
+- Supporting the Cost Optimization pillar of the Well-Architected Framework
+
+AWS Compute Optimizer is a fully managed recommendation service that analyzes historical utilization metrics from Amazon CloudWatch and suggests optimal configurations for EC2 instances, Auto Scaling groups, EBS volumes, and Lambda functions. It identifies over-provisioned and under-provisioned resources to reduce cost and improve performance.
+
+### 2. Use-Cases
+
+- Rightsizing EC2 instances for cost savings
+- Improving performance by identifying under-provisioned compute
+- Selecting better EBS volume types (e.g., gp2 → gp3)
+- Optimizing Lambda memory allocation
+- Pre-migration workload assessment
+- Helping organizations meet Cost Optimization pillar goals
+
+### 3. Additional Info
+
+- Uses 14 days+ of CloudWatch metrics for analysis
+- Provides instance family recommendations (e.g., CPU architecture changes)
+- Offers resource-level savings estimates
+- Integrates with AWS Organizations for cross-account visibility
+- Supports EC2 Auto Scaling groups recommendations
+
+### 4. Limitations
+
+- Requires enough metric history to make accurate recommendations
+- Does not automatically apply changes — manual adjustment required
+- Only supports certain resource types (no RDS, DynamoDB, etc.)
+- Recommendations may not reflect application-specific constraints
+
+### 5. Details
+
+#### Characteristics
+
+- ML-driven optimization service
+- Analyzes CloudWatch utilization trends
+- Supports EC2, ASGs, EBS volumes, Lambda
+
+#### Capabilities
+
+- Identifies over/under-provisioned resources
+- Suggests optimal instance types and sizes
+- Helps reduce cost through rightsizing
+- Provides performance risk scores
+
+#### Pricing Model
+
+- Free tier for basic recommendations
+- Advanced tier (optional): additional insights for a fee per resource
+
+#### Security / IAM
+
+- Uses IAM permissions for visibility and cross-account analysis
+- Works with KMS for encrypted CloudWatch metric data (if enabled)
+- Integrates with AWS Organizations for centralized governance
+
+### 6. Confusable Services
+
+- AWS Trusted Advisor - Compute Optimizer: ML-based deep rightsizing - Trusted Advisor: broader checklist-based best-practice checks
+  -AWS Cost Explorer - Cost Explorer: analyzes spending trends - Compute Optimizer: analyzes utilization for rightsizing
+- Amazon EC2 Auto Scaling
+  - Auto Scaling: adjusts capacity
+  - Compute Optimizer: recommends optimal instance configurations
+- AWS Pricing Calculator
+  - Pricing Calculator: estimates future cost
+  - Compute Optimizer: recommends configurations based on usage data
+
+### 7. Exam Notes
+
+- Keywords: rightsizing, ML-based recommendations, over/under-provisioned, CloudWatch metrics
+- Use Compute Optimizer when questions mention:
+  - “Reduce cost by selecting the right instance size”
+  - “Analyze instance utilization automatically”
+  - “Optimize Lambda memory configuration”
+  - “Identify overprovisioned resources”
+  - “Reduce cost using recommendations”
+  - “Choose optimal instance type based on utilization”
+
 ## 🟩 AWS Pricing Calculator
 
 ### 1. Definition
@@ -4368,6 +4488,10 @@ Billing Conductor enables custom chargeback and cost distribution across teams o
 
 # 🧩 Application Integration
 
+Application Integration services **connect independent systems** using messages, events, and workflows.
+They let components communicate without depending directly on each other.
+Their core intent is to build distributed systems that are resilient, loosely coupled, and scalable.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-EventBridge_16.png) Amazon EventBridge
 
 ### 1. Definition
@@ -4520,6 +4644,10 @@ ALB is a layer 7 load balancer that routes HTTP/HTTPS traffic based on content a
 ---
 
 # ⌨️ Developer Tools
+
+Developer Tools **automate building, testing, and deploying software** for consistent CI/CD workflows.
+They manage source code, track changes, and streamline releases.
+Their core intent is to help teams ship software faster, safer, and with repeatable processes.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-Cloud9_16.png) AWS Cloud9
 
@@ -4854,6 +4982,10 @@ AppConfig manages, validates, and deploys application configuration safely.
 
 # 📱 Frontend and Mobile
 
+Frontend and Mobile services **host and support user-facing applications** across web and mobile platforms.
+They provide managed backends, APIs, and hosting environments designed for modern client apps.
+Their core intent is to deliver responsive, scalable user experiences.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Front-End-Web-Mobile/16/Arch_AWS-Amplify_16.png) AWS Amplify
 
 ### 1. Definition
@@ -4932,6 +5064,10 @@ AWS AppSync is a fully managed GraphQL API service for building real-time, offli
 
 # 📊 Business Applications
 
+Business Applications provide **ready-made solutions** for communication, customer engagement, and internal workflows.
+They run fully managed, so teams can operate them without infrastructure overhead.
+Their core intent is to solve business needs quickly using turnkey cloud tools.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Business-Applications/16/Arch_Amazon-Connect_16.png) Amazon Connect
 
 ### 1. Definition
@@ -5009,6 +5145,10 @@ SES is a scalable email platform for transactional, marketing, and bulk email se
 ---
 
 # 🧑‍💻 End-User Computing
+
+End-User Computing **delivers virtual desktops and applications** to users anywhere.
+It centralizes data and apps while enabling secure remote access.
+Its core intent is to support scalable, secure remote work without managing physical devices.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_End-User-Computing/16/Arch_Amazon-AppStream-2_16.png) Amazon AppStream 2.0
 
@@ -5125,6 +5265,10 @@ WorkSpaces Secure Browser provides secure, isolated browser sessions streamed fr
 
 # 📟 IoT
 
+IoT services **connect physical devices to the cloud** and manage their data securely.
+They allow sensors and hardware to interact with cloud applications in real time.
+Their core intent is to bridge the physical and digital worlds for monitoring, automation, and intelligence.
+
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Internet-of-Things/16/Arch_AWS-IoT-Core_16.png) AWS IoT Core
 
 ### 1. Definition
@@ -5203,6 +5347,10 @@ IoT Greengrass extends AWS to edge devices, enabling local compute, messaging, M
 ---
 
 # 🚚 Migration and Transfer
+
+Migration services **move applications, servers, and data into AWS** reliably.
+They support discovery, replication, bulk transfer, and modernization efforts.
+Their core intent is to make cloud adoption smooth, accurate, and low-risk.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Migration-Hub_16.png) AWS Migration Hub
 
@@ -5390,6 +5538,10 @@ Migration Evaluator provides cost modeling and business case analysis for migrat
 ---
 
 # 🛒 Marketplace and Partners
+
+Marketplace and Partners **extend AWS with third‑party software and expert services**.
+They let organizations add capabilities instantly instead of building them from scratch.
+Their core intent is to accelerate adoption and reduce time‑to‑value through external solutions.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png) AWS Marketplace
 

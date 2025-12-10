@@ -155,17 +155,17 @@ AWS provides strong, built-in security capabilities and global compliance progra
 
 ### Common Confusions Across Benefits
 
-- **Global Reach vs Elasticity**\
+- **Global Reach vs Elasticity**
   Global Reach = geography and latency; Elasticity = automatic scaling.
-- **Elasticity vs Cost Optimization**\
+- **Elasticity vs Cost Optimization**
   Elasticity is a capability; cost optimization is a design practice.
-- **Economies of Scale vs Cost Optimization**\
+- **Economies of Scale vs Cost Optimization**
   Economies of Scale = AWS-driven cost efficiency; Cost Optimization = customer-driven.
-- **Economies of Scale vs Elasticity**\
+- **Economies of Scale vs Elasticity**
   Economies of Scale = lower per-unit cost; Elasticity = changing capacity.
-- **Security vs Reliability**\
+- **Security vs Reliability**
   Security = protection from threats; Reliability = surviving failures.
-- **Security vs Compliance/Governance**\
+- **Security vs Compliance/Governance**
   Security = controls and protection; Governance = standards and oversight.
 
 ## 🟢 Availability Concepts
