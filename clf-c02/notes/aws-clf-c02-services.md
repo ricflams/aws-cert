@@ -845,48 +845,102 @@ Amazon VPC enables you to create isolated virtual networks in AWS where you defi
 - SGs = stateful; NACLs = stateless
 - VPC is Regional; subnets are AZ-scoped
 
-## 🟪 Subnets (Public/Private)
+## 🟪 Network topics
+
+Not services as such.
+
+### 🔹Subnets (Public/Private)
 
 Subnets divide a VPC into AZ-scoped network segments and determine internet accessibility based on routing.
 
-### 1. Definition
-
 Subnets are subdivisions of a VPC’s CIDR block. A subnet in a single AZ becomes **public** when its route table has a route to an Internet Gateway (IGW); it remains **private** when it does not. Subnets enforce application-tier separation and govern east–west and north–south traffic patterns.
 
-### 2. Use-Cases
+#### 2. Use-Cases
 
 - Public web tier vs. private application/database tiers
 - AZ-based fault isolation
 - Controlling outbound and inbound connectivity
 
-### 3. Additional Info
+#### 3. Additional Info
 
 - Public subnet → IGW route
 - Private subnet → no IGW route; outbound enabled via NAT
 
-### 4. Limitations
+#### 4. Limitations
 
 - Cannot span AZs
 - IP exhaustion if CIDR sized too small
 
-### 5. Details
+#### 5. Details
 
 - Characteristics: Network segment; AZ-scoped; high-throughput internal networking
 - Capabilities: Traffic segmentation; public/private tiering; NAT/IGW routing
 - Pricing Model: No charge for subnets; routing components may incur costs
 - Security/IAM: Works with SGs and NACLs
 
-### 6. Confusable Services
+#### 6. Confusable Services
 
 - Route Tables: Both control traffic patterns, but route tables define routing rules while subnets define the IP address range and isolation boundary within a VPC.
 - Security Groups: Both deal with traffic, but security groups filter instance-level traffic while subnets group resources and determine public/private reachability.
 - Network ACLs: Both apply at the subnet boundary, but NACLs are stateless packet filters while subnets are structural IP partitions.
 - Availability Zones: Both appear in diagrams about resilience, but AZs are physical locations while subnets are logical IP ranges within a VPC mapped to AZs.
 
-### 7. Exam Notes
+#### 7. Exam Notes
 
 - Public = IGW route; private = no IGW route
 - NAT enables outbound for private subnets
+
+## 🔹Security Groups and NACLs
+
+Security Groups protect individual resources, and NACLs protect entire subnets.
+They are complementary tools, but SGs are used far more commonly.
+
+### Security Groups (SGs)
+
+- **Stateful virtual firewalls** that control inbound and outbound traffic at the **instance/ENI level**.
+- **Return traffic is automatically allowed**, even if no explicit outbound rule exists (because they are stateful).
+- **Deny rules do not exist**; you only specify what is permitted.
+- Rules can use **CIDR blocks, security group IDs, or prefix lists** as sources/destinations.
+- Applied at the **Elastic Network Interface (ENI)**, not at the subnet boundary.
+- Evaluate **all rules**, and if any rule matches, traffic is allowed.
+- Associated with EC2, Lambda in VPC, RDS, EFS, and other ENI-based services.
+
+#### Useful Comparisons
+
+- **vs NACLs**: SGs are stateful and instance-focused; NACLs are stateless and subnet-focused.
+- **vs WAF**: SGs filter network-layer traffic (Layers 3/4), while WAF filters **HTTP application-layer** requests (Layer 7).
+- **vs IAM Policies**: SGs control network access, while IAM policies control **who can call AWS APIs** — an entirely different plane.
+- **vs Resource Policies (S3, Lambda, API Gateway)**: SGs control traffic between network endpoints; resource policies control **which principals** can access a service.
+
+### Network ACLs (NACLs)
+
+- **Stateless packet filters** that control inbound and outbound traffic at the **subnet boundary**.
+- Require **explicit inbound and outbound rules** for return traffic because they are stateless.
+- Support both **allow and deny** rules.
+- Rules are evaluated **in order from lowest number to highest**, and the first match wins.
+- Optional tool for controlling traffic between subnets or applying broad network restrictions.
+- Each subnet must have a NACL; the default NACL allows all traffic (both in and out).
+
+#### Useful Comparisons
+
+- **vs Security Groups**: NACLs are stateless, ordered, subnet-level; SGs are stateful, unordered, and ENI-level.
+- **vs WAF**: NACLs operate at the network/transport layers; WAF operates at the HTTP application layer.
+- **vs VPC Route Tables**: NACLs filter packets; route tables determine **where** traffic is sent, not whether it is allowed.
+- **vs Firewall Manager**: Firewall Manager manages policies for WAF, Shield, and SGs across multiple accounts; NACLs remain independently configured per VPC/subnet.
+
+### When to Use Each
+
+- **Security Groups**: Primary mechanism for controlling workload-level access (e.g., “only ALB may reach EC2 instances”).
+- **NACLs**: Rarely needed except for broad, subnet-level restrictions, blocking specific IPs, or serving as a second layer of defense.
+- **WAF**: Use when filtering **HTTP traffic patterns**, not IP-level traffic (e.g., block SQL injection, rate limits, bot filtering).
+
+### Exam-Trap Notes
+
+- SGs are stateful; NACLs are stateless — this is one of the most testable facts.
+- SGs have only allow rules; NACLs have allow and deny rules.
+- NACL rules are ordered; SG rules are not.
+- WAF does not replace SGs/NACLs — entirely different layer of the OSI stack.
+- IAM policies do not control network connectivity, only API permissions — a common misconception.
 
 ## 🟪 Internet Gateway
 
@@ -2128,6 +2182,8 @@ Fully managed, petabyte-scale cloud data warehouse for analytic workloads.
 
 Amazon Redshift is a massively parallel processing (MPP) data warehouse optimized for large-scale analytics. It supports columnar storage, materialized views, RA3 storage layers, data sharing, Redshift Spectrum, and integration with data lakes.
 
+Amazon Redshift gives you the ability to analyze data that was collected from real-time sources. However, Amazon Redshift does not provide a way to collect or process real-time streaming data.
+
 ### 2. Use-Cases
 
 - Complex analytical queries
@@ -2161,7 +2217,7 @@ Amazon Redshift is a massively parallel processing (MPP) data warehouse optimize
 ### 7. Exam Notes
 
 - “Analytics,” “columnar,” “MPP,” “Spectrum” → Redshift
-- Redshift is for OLAP, not OLTP
+- Redshift is for OLAP (online analytical processing; smarter decision-making), not OLTP (online transactional processing; massive number of transactions)
 
 ---
 
@@ -2819,6 +2875,8 @@ Real-time data ingestion and streaming platform for high-throughput event pipeli
 
 Kinesis Data Streams (KDS) ingests and processes real-time streaming data using shards that scale throughput linearly. Applications consume data with low latency.
 
+Kinesis can ingest real-time data from video, audio, application logs, and website clickstreams. Additionally, Kinesis can ingest IoT telemetry data for machine learning, analytics, and other applications.
+
 ### 2. Use-Cases
 
 - Real-time analytics
@@ -3211,7 +3269,9 @@ Centralized SSO for workforce authentication across AWS accounts and application
 
 ### 1. Definition
 
-Managed encryption key service supporting symmetric and asymmetric keys.
+AWS KMS is a managed service to create and control the encryption keys used to encrypt your data.
+
+AWS KMS makes it easy to create and manage cryptographic keys and control their use across a wide range of AWS services, for instance CloudTrail data.
 
 ### 2. Use-Cases
 
@@ -3222,6 +3282,7 @@ Managed encryption key service supporting symmetric and asymmetric keys.
 ### 3. Additional Info
 
 - Supports CMKs; automatic rotation
+- Supports symmetric and asymmetric keys.
 
 ### 4. Limitations
 
@@ -3248,7 +3309,7 @@ Managed encryption key service supporting symmetric and asymmetric keys.
 
 ### 1. Definition
 
-Stores, rotates, and retrieves application secrets such as passwords and API keys.
+Stores, rotates, and retrieves application secrets such as API keys and passwords for databases and other services.
 
 ### 2. Use-Cases
 
@@ -3262,6 +3323,7 @@ Stores, rotates, and retrieves application secrets such as passwords and API key
 ### 4. Limitations
 
 - Costlier than SSM Parameter Store
+- Does not provide dedicated hardware appliances; that's CloudHSM.
 
 ### 5. Details
 
@@ -3275,6 +3337,7 @@ Stores, rotates, and retrieves application secrets such as passwords and API key
 - AWS Systems Manager Parameter Store: Both store secrets and configuration, but Secrets Manager adds rotation and lifecycle management while Parameter Store is simpler and cheaper.
 - KMS: Both touch cryptography, but Secrets Manager stores application secrets while KMS stores and uses keys for encryption.
 - AWS Vault (external): Both handle secrets, but Vault is multi-environment while Secrets Manager is AWS-native, leading to conceptual overlap.
+- CloudHSM: CloudHSM helps you comply with corporate, contractual, and regulatory compliance requirements for data security by using dedicated hardware security module (HSM) appliances within the AWS Cloud.
 
 ### 7. Exam Notes
 
@@ -3358,6 +3421,8 @@ Enhanced DDoS protection with cost protection and advanced detection.
 
 Web application firewall filtering malicious HTTP/S traffic at layer 7.
 
+AWS WAF gives you control over how traffic reaches your applications. AWS WAF gives you the ability to create security rules that control network traffic and block common attack patterns.
+
 ### 2. Use-Cases
 
 - Blocking SQLi/XSS
@@ -3388,6 +3453,7 @@ Web application firewall filtering malicious HTTP/S traffic at layer 7.
 ### 7. Exam Notes
 
 - SQLi/XSS mitigation → WAF
+- An AWS WAF rule can filter traffic carrying SQL injection attacks.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-Inspector_16.png) Amazon Inspector
 
@@ -3583,7 +3649,7 @@ User identity and authentication service for apps, supporting sign-up, sign-in, 
 
 ### 1. Definition
 
-ACM issues, manages, and renews TLS/SSL certificates for use with AWS services.
+ACM helps you to provision, manage, and deploy SSL/TLS certificates on AWS managed resources. SSL/TLS certificates are used to encrypt data traveling across a network.
 
 ### 2. Use-Cases
 
@@ -4139,6 +4205,8 @@ Trusted Advisor provides automated best-practice checks covering cost optimizati
 ### 7. Exam Notes
 
 - “Cost optimization,” “support plan required” → Trusted Advisor
+- Trusted Advisor checks the root account and warns if MFA is not enabled.
+- Trusted Advisor does not provide notifications about software patches for EC2 instances.
 
 ## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Compute-Optimizer_16.png) AWS Compute Optimizer
 

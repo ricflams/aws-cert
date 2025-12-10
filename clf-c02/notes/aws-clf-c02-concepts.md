@@ -596,6 +596,9 @@ This perspective defines how workloads are run, monitored, and supported after m
 - “Landing zone, architecture, CI/CD, modernization patterns” → **Platform**
 - “Identity, encryption, monitoring, compliance” → **Security**
 - “Monitoring, runbooks, automation, operations after migration” → **Operations**
+- “Connects technology and business” → **People**
+- “Guidance about operational risk management” → **Governance**
+- “Ensure your applications and workloads are healthy and available” → **Operations**
 
 ### Exam Tricks
 
@@ -605,7 +608,7 @@ This perspective defines how workloads are run, monitored, and supported after m
 - If the prompt references **detecting threats** (e.g., GuardDuty), it falls under **Security**, not Operations.
 - “Ongoing monitoring and response” → **Operations**, not Security, unless explicitly tied to risk.
 - Questions about ROI or value realization never belong to Platform or Operations — always **Business**.
-- Governance vs Security trick: **SCPs = Governance**, **IAM policies = Security**.
+- Governance vs Security trick: **SCPs (Service Control Policies) = Governance** and **IAM policies = Security**.
 
 # 🚀 Adoption Strategies
 
