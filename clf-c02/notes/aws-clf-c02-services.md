@@ -890,12 +890,13 @@ Subnets are subdivisions of a VPC’s CIDR block. A subnet in a single AZ become
 - Public = IGW route; private = no IGW route
 - NAT enables outbound for private subnets
 
-## 🔹Security Groups and NACLs
+### 🔹Security Groups and NACLs
 
 Security Groups protect individual resources, and NACLs protect entire subnets.
+
 They are complementary tools, but SGs are used far more commonly.
 
-### Security Groups (SGs)
+#### Security Groups (SGs)
 
 - **Stateful virtual firewalls** that control inbound and outbound traffic at the **instance/ENI level**.
 - **Return traffic is automatically allowed**, even if no explicit outbound rule exists (because they are stateful).
@@ -905,14 +906,14 @@ They are complementary tools, but SGs are used far more commonly.
 - Evaluate **all rules**, and if any rule matches, traffic is allowed.
 - Associated with EC2, Lambda in VPC, RDS, EFS, and other ENI-based services.
 
-#### Useful Comparisons
+##### Useful Comparisons
 
 - **vs NACLs**: SGs are stateful and instance-focused; NACLs are stateless and subnet-focused.
 - **vs WAF**: SGs filter network-layer traffic (Layers 3/4), while WAF filters **HTTP application-layer** requests (Layer 7).
 - **vs IAM Policies**: SGs control network access, while IAM policies control **who can call AWS APIs** — an entirely different plane.
 - **vs Resource Policies (S3, Lambda, API Gateway)**: SGs control traffic between network endpoints; resource policies control **which principals** can access a service.
 
-### Network ACLs (NACLs)
+#### Network ACLs (NACLs)
 
 - **Stateless packet filters** that control inbound and outbound traffic at the **subnet boundary**.
 - Require **explicit inbound and outbound rules** for return traffic because they are stateless.
@@ -921,26 +922,40 @@ They are complementary tools, but SGs are used far more commonly.
 - Optional tool for controlling traffic between subnets or applying broad network restrictions.
 - Each subnet must have a NACL; the default NACL allows all traffic (both in and out).
 
-#### Useful Comparisons
+##### Useful Comparisons
 
 - **vs Security Groups**: NACLs are stateless, ordered, subnet-level; SGs are stateful, unordered, and ENI-level.
 - **vs WAF**: NACLs operate at the network/transport layers; WAF operates at the HTTP application layer.
 - **vs VPC Route Tables**: NACLs filter packets; route tables determine **where** traffic is sent, not whether it is allowed.
 - **vs Firewall Manager**: Firewall Manager manages policies for WAF, Shield, and SGs across multiple accounts; NACLs remain independently configured per VPC/subnet.
 
-### When to Use Each
+#### When to Use Each
 
 - **Security Groups**: Primary mechanism for controlling workload-level access (e.g., “only ALB may reach EC2 instances”).
 - **NACLs**: Rarely needed except for broad, subnet-level restrictions, blocking specific IPs, or serving as a second layer of defense.
 - **WAF**: Use when filtering **HTTP traffic patterns**, not IP-level traffic (e.g., block SQL injection, rate limits, bot filtering).
 
-### Exam-Trap Notes
+#### Exam-Trap Notes
 
 - SGs are stateful; NACLs are stateless — this is one of the most testable facts.
 - SGs have only allow rules; NACLs have allow and deny rules.
 - NACL rules are ordered; SG rules are not.
 - WAF does not replace SGs/NACLs — entirely different layer of the OSI stack.
 - IAM policies do not control network connectivity, only API permissions — a common misconception.
+
+### 🔹Elastic Network Interface (ENI)
+
+An Elastic Network Interface (ENI) is a virtual network card in AWS. It represents the network identity of an EC2 instance or any AWS service that attaches to a VPC.
+
+Think of an ENI as the thing in AWS that owns an IP address, MAC address, security group membership, and network routing identity.
+
+ENIs are what enable:
+
+- An instance to have one or more IP addresses
+- High availability failover of network identities
+- Multiple network interfaces for firewalls, NAT appliances, or monitoring systems
+- Lambda functions in a VPC to talk to private subnets
+- Services like RDS, EFS, and ECS tasks to appear inside your VPC
 
 ## 🟪 Internet Gateway
 
