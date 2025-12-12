@@ -2,23 +2,23 @@
 
 ## Table of Contents
 
-<img src="icons/category/Arch-Category_16/Arch-Category_Compute_16.png" alt="icon" width="16" height="16"> [Compute](#-compute)
-<img src="icons/category/Arch-Category_16/Arch-Category_Networking-Content-Delivery_16.png" alt="icon" width="16" height="16"> [Networking and Content Delivery](#-networking-and-content-delivery)
-<img src="icons/category/Arch-Category_16/Arch-Category_Storage_16.png" alt="icon" width="16" height="16"> [Storage](#-storage)
-<img src="icons/category/Arch-Category_16/Arch-Category_Database_16.png" alt="icon" width="16" height="16"> [Databases](#databases)
-<img src="icons/category/Arch-Category_16/Arch-Category_Artificial-Intelligence_16.png" alt="icon" width="16" height="16"> [AI and Machine Learning](#-ai-and-machine-learning)
-<img src="icons/category/Arch-Category_16/Arch-Category_Analytics_16.png" alt="icon" width="16" height="16"> [Analytics](#-analytics)
-<img src="icons/category/Arch-Category_16/Arch-Category_Security-Identity-Compliance_16.png" alt="icon" width="16" height="16"> [Security, Identity, and Compliance](#-security-identity-and-compliance)
-<img src="icons/category/Arch-Category_16/Arch-Category_Management-Governance_16.png" alt="icon" width="16" height="16"> [Management and Governance](#-management-and-governance)
-<img src="icons/category/Arch-Category_16/Arch-Category_Application-Integration_16.png" alt="icon" width="16" height="16"> [Application Integration](#-application-integration)
-<img src="icons/category/Arch-Category_16/Arch-Category_Developer-Tools_16.png" alt="icon" width="16" height="16"> [Developer Tools](#-developer-tools)
-<img src="icons/category/Arch-Category_16/Arch-Category_Front-End-Web-Mobile_16.png" alt="icon" width="16" height="16"> [Frontend and Mobile](#-frontend-and-mobile)
-<img src="icons/category/Arch-Category_16/Arch-Category_Business-Applications_16.png" alt="icon" width="16" height="16"> [Business Applications](#-business-applications)
-<img src="icons/category/Arch-Category_16/Arch-Category_End-User-Computing_16.png" alt="icon" width="16" height="16"> [End-User Computing](#-end-user-computing)
-<img src="icons/category/Arch-Category_16/Arch-Category_Internet-of-Things_16.png" alt="icon" width="16" height="16"> [Iot](#-iot)
-<img src="icons/category/Arch-Category_16/Arch-Category_Migration-Modernization_16.png" alt="icon" width="16" height="16"> [Migration and Transfer](#-migration-and-transfer)
-<img src="icons/service/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png" alt="icon" width="16" height="16"> [Marketplace and Partners](#-marketplace-and-partners)
-✅ [Summary](#-summary)
+<img src="icons/category/Arch-Category_16/Arch-Category_Compute_16.png" alt="icon" width="16" height="16"> [Compute](#-compute)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Networking-Content-Delivery_16.png" alt="icon" width="16" height="16"> [Networking and Content Delivery](#-networking-and-content-delivery)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Storage_16.png" alt="icon" width="16" height="16"> [Storage](#-storage)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Database_16.png" alt="icon" width="16" height="16"> [Databases](#databases)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Artificial-Intelligence_16.png" alt="icon" width="16" height="16"> [AI and Machine Learning](#-ai-and-machine-learning)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Analytics_16.png" alt="icon" width="16" height="16"> [Analytics](#-analytics)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Security-Identity-Compliance_16.png" alt="icon" width="16" height="16"> [Security, Identity, and Compliance](#-security-identity-and-compliance)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Management-Governance_16.png" alt="icon" width="16" height="16"> [Management and Governance](#-management-and-governance)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Application-Integration_16.png" alt="icon" width="16" height="16"> [Application Integration](#-application-integration)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Developer-Tools_16.png" alt="icon" width="16" height="16"> [Developer Tools](#-developer-tools)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Front-End-Web-Mobile_16.png" alt="icon" width="16" height="16"> [Frontend and Mobile](#-frontend-and-mobile)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Business-Applications_16.png" alt="icon" width="16" height="16"> [Business Applications](#-business-applications)\
+<img src="icons/category/Arch-Category_16/Arch-Category_End-User-Computing_16.png" alt="icon" width="16" height="16"> [End-User Computing](#-end-user-computing)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Internet-of-Things_16.png" alt="icon" width="16" height="16"> [Iot](#-iot)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Migration-Modernization_16.png" alt="icon" width="16" height="16"> [Migration and Transfer](#-migration-and-transfer)\
+<img src="icons/service/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png" alt="icon" width="16" height="16"> [Marketplace and Partners](#-marketplace-and-partners)\
+✅ [Summary](#-summary)\
 
 ---
 
