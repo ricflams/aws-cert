@@ -2,33 +2,33 @@
 
 ## Table of Contents
 
-- 🖥️ [Compute](#-compute)
-- 🌐 [Networking and Content Delivery](#-networking-and-content-delivery)
-- 💾 [Storage](#-storage)
-- 🗄️ [Databases](#-databases)
-- 🤖 [AI and Machine Learning](#-ai-and-machine-learning)
-- 📈 [Analytics](#-analytics)
-- 🔐 [Security, Identity, and Compliance](#-security-identity-and-compliance)
-- 🛠️ [Management and Governance](#-management-and-governance)
-- 🧩 [Application Integration](#-application-integration)
-- ⌨️ [Developer Tools](#-developer-tools)
-- 📱 [Frontend and Mobile](#-frontend-and-mobile)
-- 📊 [Business Applications](#-business-applications)
-- 🧑‍💻 [End-User Computing](#-end-user-computing)
-- 📟 [Iot](#-iot)
-- 🚚 [Migration and Transfer](#-migration-and-transfer)
-- 🛒 [Marketplace and Partners](#-marketplace-and-partners)
-- ✅ [Summary](#-summary)
+<img src="icons/category/Arch-Category_16/Arch-Category_Compute_16.png" alt="icon" width="16" height="16"> [Compute](#-compute)
+<img src="icons/category/Arch-Category_16/Arch-Category_Networking-Content-Delivery_16.png" alt="icon" width="16" height="16"> [Networking and Content Delivery](#-networking-and-content-delivery)
+<img src="icons/category/Arch-Category_16/Arch-Category_Storage_16.png" alt="icon" width="16" height="16"> [Storage](#-storage)
+<img src="icons/category/Arch-Category_16/Arch-Category_Database_16.png" alt="icon" width="16" height="16"> [Databases](#databases)
+<img src="icons/category/Arch-Category_16/Arch-Category_Artificial-Intelligence_16.png" alt="icon" width="16" height="16"> [AI and Machine Learning](#-ai-and-machine-learning)
+<img src="icons/category/Arch-Category_16/Arch-Category_Analytics_16.png" alt="icon" width="16" height="16"> [Analytics](#-analytics)
+<img src="icons/category/Arch-Category_16/Arch-Category_Security-Identity-Compliance_16.png" alt="icon" width="16" height="16"> [Security, Identity, and Compliance](#-security-identity-and-compliance)
+<img src="icons/category/Arch-Category_16/Arch-Category_Management-Governance_16.png" alt="icon" width="16" height="16"> [Management and Governance](#-management-and-governance)
+<img src="icons/category/Arch-Category_16/Arch-Category_Application-Integration_16.png" alt="icon" width="16" height="16"> [Application Integration](#-application-integration)
+<img src="icons/category/Arch-Category_16/Arch-Category_Developer-Tools_16.png" alt="icon" width="16" height="16"> [Developer Tools](#-developer-tools)
+<img src="icons/category/Arch-Category_16/Arch-Category_Front-End-Web-Mobile_16.png" alt="icon" width="16" height="16"> [Frontend and Mobile](#-frontend-and-mobile)
+<img src="icons/category/Arch-Category_16/Arch-Category_Business-Applications_16.png" alt="icon" width="16" height="16"> [Business Applications](#-business-applications)
+<img src="icons/category/Arch-Category_16/Arch-Category_End-User-Computing_16.png" alt="icon" width="16" height="16"> [End-User Computing](#-end-user-computing)
+<img src="icons/category/Arch-Category_16/Arch-Category_Internet-of-Things_16.png" alt="icon" width="16" height="16"> [Iot](#-iot)
+<img src="icons/category/Arch-Category_16/Arch-Category_Migration-Modernization_16.png" alt="icon" width="16" height="16"> [Migration and Transfer](#-migration-and-transfer)
+<img src="icons/service/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png" alt="icon" width="16" height="16"> [Marketplace and Partners](#-marketplace-and-partners)
+✅ [Summary](#-summary)
 
 ---
 
-# 🖥️ Compute
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Compute_16.png) Compute
 
 Compute is about **actually running your application’s code**—on servers, containers, or serverless functions.
 It gives you the processing power your workloads need, whenever they need it.
 Its core intent is to execute code efficiently, elastically, and in the form that best fits your architecture.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-EC2_16.png) Amazon EC2
+## ![icon](icons/service/Arch_Compute/16/Arch_Amazon-EC2_16.png) Amazon EC2
 
 Amazon Elastic Compute Cloud (EC2) provides resizable compute capacity in the cloud.
 
@@ -112,7 +112,7 @@ Amazon EC2 is a web service that provides secure, resizable compute capacity usi
 - Predictable Workloads: Predictable, steady workloads are expected to use Reserved Instances or Savings Plans, not On-Demand.
 - License-Restricted Workloads: Requirements like per-core/per-socket licensing imply the need for Dedicated Hosts.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-EC2-Auto-Scaling_16.png) Amazon EC2 Auto Scaling
+## ![icon](icons/service/Arch_Compute/16/Arch_Amazon-EC2-Auto-Scaling_16.png) Amazon EC2 Auto Scaling
 
 Automatically adjusts the number of Amazon EC2 instances to maintain application performance and optimize cost.
 
@@ -166,7 +166,7 @@ Amazon EC2 Auto Scaling automatically launches or terminates EC2 instances based
 - Use target tracking for simple, metric-based scaling.
 - Multi-AZ HA requires ASG spanning multiple subnets.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Elastic-Load-Balancing_16.png) Elastic Load Balancing (ELB)
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Elastic-Load-Balancing_16.png) Elastic Load Balancing (ELB)
 
 Distributes incoming traffic across multiple targets to improve application availability, scalability, and fault tolerance.
 
@@ -225,7 +225,7 @@ Elastic Load Balancing automatically distributes incoming application or network
 - NLB = extreme performance, TCP/UDP, static IPs.
 - ELB + Auto Scaling = high availability and elasticity.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Lambda_16.png) AWS Lambda
+## ![icon](icons/service/Arch_Compute/16/Arch_AWS-Lambda_16.png) AWS Lambda
 
 Serverless compute service that runs code in response to events without provisioning or managing servers.
 
@@ -282,7 +282,7 @@ AWS Lambda lets you run code by uploading functions and setting triggers from AW
 - Common pairing: API Gateway + Lambda = serverless API.
 - S3 upload triggers, DynamoDB/Kinesis stream processing often indicate Lambda.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Containers/16/Arch_AWS-Fargate_16.png) AWS Fargate
+## ![icon](icons/service/Arch_Containers/16/Arch_AWS-Fargate_16.png) AWS Fargate
 
 Serverless compute engine for containers that runs tasks and pods without provisioning or managing EC2 instances.
 
@@ -337,7 +337,7 @@ AWS Fargate is a serverless compute engine for running containers using Amazon E
 - Appears in questions involving ECS/EKS + no infrastructure management.
 - Great answer when containerization is required but ops overhead must be minimized.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Containers/16/Arch_Amazon-Elastic-Container-Service_16.png) Amazon Elastic Container Service (Amazon ECS)
+## ![icon](icons/service/Arch_Containers/16/Arch_Amazon-Elastic-Container-Service_16.png) Amazon Elastic Container Service (Amazon ECS)
 
 Highly scalable, AWS-native container orchestration service for deploying and managing Docker containers using EC2 or Fargate.
 
@@ -392,7 +392,7 @@ Amazon ECS is a fully managed container orchestration service that deploys, runs
 - ECS + Fargate is common for fully managed container deployments.
 - ECS + EC2 provides more control but requires node management.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Containers/16/Arch_Amazon-Elastic-Kubernetes-Service_16.png) Amazon Elastic Kubernetes Service (Amazon EKS)
+## ![icon](icons/service/Arch_Containers/16/Arch_Amazon-Elastic-Kubernetes-Service_16.png) Amazon Elastic Kubernetes Service (Amazon EKS)
 
 Fully managed Kubernetes control plane for running Kubernetes workloads at scale on AWS using EC2 or Fargate worker nodes.
 
@@ -449,7 +449,7 @@ Amazon EKS is a managed Kubernetes service that eliminates the need to install, 
 - EKS control plane is fully managed by AWS; customers manage only nodes.
 - IRSA (IAM Roles for Service Accounts) often appears in security questions.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Containers/16/Arch_Amazon-Elastic-Container-Registry_16.png) Amazon Elastic Container Registry (Amazon ECR)
+## ![icon](icons/service/Arch_Containers/16/Arch_Amazon-Elastic-Container-Registry_16.png) Amazon Elastic Container Registry (Amazon ECR)
 
 Fully managed container image registry for securely storing, managing, and deploying Docker container images.
 
@@ -506,7 +506,7 @@ Amazon ECR is a managed container image registry that stores, manages, and retri
 - CI/CD questions often include ECR + CodeBuild/CodePipeline.
 - IAM restrictions on image access are commonly tested.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Batch_16.png) AWS Batch
+## ![icon](icons/service/Arch_Compute/16/Arch_AWS-Batch_16.png) AWS Batch
 
 Fully managed batch computing service that dynamically provisions compute resources to run batch workloads at any scale.
 
@@ -561,7 +561,7 @@ AWS Batch is a managed service that runs batch computing workloads using EC2 ins
 - Spot Instances + AWS Batch = common cost optimization scenario.
 - Use Batch for scheduled or triggered batch jobs that need compute at scale.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Elastic-Beanstalk_16.png) AWS Elastic Beanstalk
+## ![icon](icons/service/Arch_Compute/16/Arch_AWS-Elastic-Beanstalk_16.png) AWS Elastic Beanstalk
 
 Fully managed Platform-as-a-Service (PaaS) for deploying and scaling web applications without managing underlying infrastructure.
 
@@ -618,7 +618,7 @@ AWS Elastic Beanstalk deploys and scales web applications and services. It is a 
 - Beanstalk is ideal when teams want simplicity but optional low-level control.
 - Load-balanced environments = multi-AZ HA automatically.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-Lightsail_16.png) Amazon Lightsail
+## ![icon](icons/service/Arch_Compute/16/Arch_Amazon-Lightsail_16.png) Amazon Lightsail
 
 Simplified virtual private server (VPS) service for small applications with predictable, bundled monthly pricing.
 
@@ -674,7 +674,7 @@ Amazon Lightsail provides easy-to-use virtual private servers, databases, storag
 - Not for large-scale architectures; for simplicity and small projects.
 - Includes blueprints like WordPress and LAMP for rapid deployment.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Outposts-family_16.png) AWS Outposts
+## ![icon](icons/service/Arch_Compute/16/Arch_AWS-Outposts-family_16.png) AWS Outposts
 
 Brings native AWS infrastructure, services, APIs, and tools to on‑premises locations for a consistent hybrid cloud experience.
 
@@ -730,7 +730,7 @@ AWS Outposts is a fully managed service that delivers AWS-designed hardware rack
 - Outposts = AWS hardware shipped to your data center.
 - Ideal for hybrid workloads with consistent tooling across environments.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-API-Gateway_16.png) Amazon API Gateway
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Amazon-API-Gateway_16.png) Amazon API Gateway
 
 Fully managed service for creating, securing, and scaling APIs, enabling applications to access backend services via REST, HTTP, or WebSocket endpoints.
 
@@ -787,13 +787,13 @@ Amazon API Gateway is a managed service for building and managing APIs at scale.
 
 ---
 
-# 🌐 Networking and Content Delivery
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Networking-Content-Delivery_16.png) Networking and Content Delivery
 
 Networking controls **how data travels** between users, services, and systems.
 It ensures your applications are reachable, secure, and fast no matter where your customers are.
 Its core intent is to provide reliable connections and global content delivery with low latency.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-Virtual-Private-Cloud_16.png) Amazon VPC
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Amazon-Virtual-Private-Cloud_16.png) Amazon VPC
 
 Amazon Virtual Private Cloud (VPC) provides logically isolated virtual networks in AWS with full control over IP addressing, routing, and security.
 
@@ -1077,7 +1077,7 @@ NAT Gateway is a managed, scalable service placed in a public subnet to provide 
 - Must be in a public subnet
 - Private subnet → NAT → IGW
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Client-VPN_16.png) AWS Client VPN
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Client-VPN_16.png) AWS Client VPN
 
 Managed client VPN service for remote user access into AWS and on-prem networks.
 
@@ -1119,7 +1119,7 @@ AWS Client VPN provides OpenVPN-based secure remote access for users, integratin
 - For remote individuals, not networks
 - Requires authorization rules for subnets
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Site-to-Site-VPN_16.png) AWS Site-to-Site VPN
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Site-to-Site-VPN_16.png) AWS Site-to-Site VPN
 
 Creates encrypted IPSec tunnels between on-prem networks and AWS VPCs.
 
@@ -1168,7 +1168,7 @@ AWS Site-to-Site VPN is a fully managed IPSec VPN connection that links your on-
 - Need hybrid + high availability → Direct Connect + VPN failover
 - Connecting VPCs together → VPC Peering or Transit Gateway
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Direct-Connect_16.png) AWS Direct Connect
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Direct-Connect_16.png) AWS Direct Connect
 
 Provides private, dedicated network connectivity between on-premises and AWS.
 
@@ -1212,7 +1212,7 @@ AWS Direct Connect establishes a private physical network connection that bypass
 - “Consistent,” “private,” “low-latency” → Direct Connect
 - Combine DX + VPN for HA
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-PrivateLink_16.png) AWS PrivateLink
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-PrivateLink_16.png) AWS PrivateLink
 
 Provides private connectivity to AWS services and customer services over VPC endpoints without traversing the public internet.
 
@@ -1256,7 +1256,7 @@ AWS PrivateLink allows private communication between VPCs and AWS services or Sa
 - “Access AWS services privately” → PrivateLink
 - Interface endpoints = PrivateLink
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Transit-Gateway_16.png) AWS Transit Gateway
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Transit-Gateway_16.png) AWS Transit Gateway
 
 Hub-and-spoke network transit service connecting VPCs, on-prem networks, and VPNs.
 
@@ -1344,7 +1344,7 @@ VPC Endpoints enable private connectivity to AWS services. Gateway endpoints sup
 - Gateway = S3 & DynamoDB
 - Interface = PrivateLink-based
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-Route-53_16.png) Amazon Route 53
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Amazon-Route-53_16.png) Amazon Route 53
 
 Highly available and scalable DNS service providing domain registration, DNS routing, and health checking.
 
@@ -1386,7 +1386,7 @@ Amazon Route 53 is a managed DNS and domain registration service used to route e
 - Weighted = A/B testing; latency = user proximity
 - Failover routing uses health checks
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-CloudFront_16.png) Amazon CloudFront
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Amazon-CloudFront_16.png) Amazon CloudFront
 
 Global content delivery network (CDN) accelerating delivery of web content to users worldwide.
 
@@ -1428,7 +1428,7 @@ Amazon CloudFront is a CDN that caches and delivers content through a global net
 - “Global CDN,” “edge caching,” “Lambda@Edge” → CloudFront
 - Often paired with S3 static websites
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Global-Accelerator_16.png) AWS Global Accelerator
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Global-Accelerator_16.png) AWS Global Accelerator
 
 Improves global application performance and availability using AWS global network and Anycast IP addresses.
 
@@ -1472,13 +1472,13 @@ AWS Global Accelerator routes user traffic over the AWS global backbone instead 
 
 ---
 
-# 💾 Storage
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Storage_16.png) Storage
 
 Storage is responsible for **keeping data safe and durable** for as long as needed.
 It stores files, objects, backups, and block data across multiple storage models.
 Its core intent is to provide scalable, reliable places to put data—short-term or forever.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-Simple-Storage-Service_16.png) Amazon S3
+## ![icon](icons/service/Arch_Storage/16/Arch_Amazon-Simple-Storage-Service_16.png) Amazon S3
 
 Object storage service offering high durability, scalability, and global accessibility.
 
@@ -1532,7 +1532,7 @@ Amazon S3 is a fully managed object storage service designed for storing and ret
 - “Object storage,” “11 9’s durability,” “data lake,” “static website” → S3
 - Block public access prevents unintended exposure
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-Elastic-Block-Store_16.png) Amazon EBS
+## ![icon](icons/service/Arch_Storage/16/Arch_Amazon-Elastic-Block-Store_16.png) Amazon EBS
 
 Block storage volumes for EC2 instances with high performance and low latency.
 
@@ -1573,7 +1573,7 @@ Amazon Elastic Block Store (EBS) provides persistent block storage volumes for E
 - EBS = persistent block storage; Instance Store = ephemeral
 - gp3 default; io2 for highest IOPS
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-EFS_16.png) Amazon EFS
+## ![icon](icons/service/Arch_Storage/16/Arch_Amazon-EFS_16.png) Amazon EFS
 
 Fully managed, elastic NFS file system for Linux workloads shared across multiple instances.
 
@@ -1615,7 +1615,7 @@ Amazon Elastic File System (EFS) is a scalable, elastic file system providing sh
 - Multi-AZ, POSIX = EFS
 - Automatically scales with usage
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-FSx_16.png) Amazon FSx (Windows & Lustre)
+## ![icon](icons/service/Arch_Storage/16/Arch_Amazon-FSx_16.png) Amazon FSx (Windows & Lustre)
 
 Managed file systems optimized for Windows workloads or high-performance computing.
 
@@ -1657,7 +1657,7 @@ Amazon FSx provides fully managed file storage offerings: FSx for Windows File S
 - Windows SMB needs FSx Windows
 - HPC parallel access → FSx Lustre
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_AWS-Storage-Gateway_16.png) AWS Storage Gateway
+## ![icon](icons/service/Arch_Storage/16/Arch_AWS-Storage-Gateway_16.png) AWS Storage Gateway
 
 Hybrid cloud storage service connecting on-prem workloads with AWS storage.
 
@@ -1698,7 +1698,7 @@ AWS Storage Gateway provides hybrid storage with file, volume, and tape gateway 
 - File Gateway → S3-backed NFS/SMB
 - Tape Gateway replaces physical tape libraries
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_AWS-Backup_16.png) AWS Backup
+## ![icon](icons/service/Arch_Storage/16/Arch_AWS-Backup_16.png) AWS Backup
 
 Centralized, automated backup service for AWS and on‑prem workloads.
 
@@ -1739,7 +1739,7 @@ AWS Backup provides fully managed, policy‑driven backup orchestration across A
 
 - “Centralize backups,” “policy-based retention,” “cross-region backup” → AWS Backup
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-DataSync_16.png) AWS DataSync
+## ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-DataSync_16.png) AWS DataSync
 
 Automated data transfer service between on‑prem, AWS storage, and AWS services.
 
@@ -1779,7 +1779,7 @@ AWS DataSync automates and accelerates data movement to, from, and between AWS s
 
 - “Accelerated transfer,” “automated sync,” “NFS/SMB to S3/EFS” → DataSync
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Transfer-Family_16.png) AWS Transfer Family
+## ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-Transfer-Family_16.png) AWS Transfer Family
 
 Managed SFTP, FTPS, and FTP endpoints backed by Amazon S3 or EFS.
 
@@ -1818,7 +1818,7 @@ AWS Transfer Family provides fully managed file transfer endpoints using traditi
 
 - “SFTP/FTP to S3/EFS” → Transfer Family
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_AWS-Elastic-Disaster-Recovery_16.png) AWS Elastic Disaster Recovery
+## ![icon](icons/service/Arch_Storage/16/Arch_AWS-Elastic-Disaster-Recovery_16.png) AWS Elastic Disaster Recovery
 
 Disaster recovery service enabling fast failover of on‑prem or cloud workloads into AWS.
 
@@ -1857,7 +1857,7 @@ AWS Elastic Disaster Recovery (DRS) continuously replicates on-prem or cloud ser
 
 - “Fast failover,” “continuous replication,” “DR strategy” → DRS
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_AWS-Snowball_16.png) AWS Snow Family
+## ![icon](icons/service/Arch_Storage/16/Arch_AWS-Snowball_16.png) AWS Snow Family
 
 Physical devices for offline or edge data transfer and edge compute.
 
@@ -1882,13 +1882,13 @@ Physical devices for offline or edge data transfer and edge compute.
 
 ---
 
-# 🗄️ Databases
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Database_16.png) Databases
 
 Databases **organize and retrieve application data** with speed and correctness.
 They structure data in tables, documents, key-value stores, graphs, or time‑series formats.
 Their core intent is to deliver fast, consistent access to well-managed data.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-RDS_16.png) Amazon RDS
+## ![icon](icons/service/Arch_Database/16/Arch_Amazon-RDS_16.png) Amazon RDS
 
 Managed relational database service supporting Amazon Aurora, MySQL, PostgreSQL, MariaDB, Oracle, SQL Server.
 
@@ -1930,7 +1930,7 @@ Amazon RDS automates database provisioning, patching, backups, monitoring, and r
 
 - Multi-AZ = HA; read replicas ≠ HA
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-Aurora_16.png) Amazon Aurora
+## ![icon](icons/service/Arch_Database/16/Arch_Amazon-Aurora_16.png) Amazon Aurora
 
 High-performance, cloud-native relational database compatible with MySQL and PostgreSQL.
 
@@ -1984,7 +1984,7 @@ Aurora is a distributed, fault-tolerant, high-performance relational database en
 - Aurora = performance + HA + replication across AZs
 - Global Aurora = lowest-latency global reads
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-DynamoDB_16.png) Amazon DynamoDB
+## ![icon](icons/service/Arch_Database/16/Arch_Amazon-DynamoDB_16.png) Amazon DynamoDB
 
 Fully managed NoSQL database providing single-digit millisecond performance at any scale.
 
@@ -2026,7 +2026,7 @@ DynamoDB is a serverless NoSQL key-value and document database supporting massiv
 
 - Partition keys, WCU/RCU, on-demand vs provisioned
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-DynamoDB_16.png) Amazon DynamoDB Accelerator (DAX)
+## ![icon](icons/service/Arch_Database/16/Arch_Amazon-DynamoDB_16.png) Amazon DynamoDB Accelerator (DAX)
 
 In-memory cache for DynamoDB delivering microsecond read latency.
 
@@ -2066,7 +2066,7 @@ DAX is a fully managed in-memory caching layer for DynamoDB that accelerates rea
 
 - Keyword: “microsecond latency for DynamoDB”
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-ElastiCache_16.png) Amazon ElastiCache
+## ![icon](icons/service/Arch_Database/16/Arch_Amazon-ElastiCache_16.png) Amazon ElastiCache
 
 Managed Redis and Memcached service for low-latency caching.
 
@@ -2107,7 +2107,7 @@ ElastiCache provides in-memory data stores using Redis or Memcached, improving a
 
 - Redis = richer features; Memcached = simple, horizontal scale
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-DocumentDB_16.png) Amazon DocumentDB
+## ![icon](icons/service/Arch_Database/16/Arch_Amazon-DocumentDB_16.png) Amazon DocumentDB
 
 Managed document database service compatible with MongoDB workloads.
 
@@ -2148,7 +2148,7 @@ Amazon DocumentDB is a fully managed, scalable document database service designe
 
 - “MongoDB-compatible,” “JSON documents” → DocumentDB
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-Neptune_16.png) Amazon Neptune
+## ![icon](icons/service/Arch_Database/16/Arch_Amazon-Neptune_16.png) Amazon Neptune
 
 High-performance graph database for highly connected datasets.
 
@@ -2190,7 +2190,7 @@ Amazon Neptune is a fully managed graph database supporting Property Graph and R
 
 - “Graph,” “relationships,” “Gremlin/SPARQL” → Neptune
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Redshift_16.png) Amazon Redshift
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-Redshift_16.png) Amazon Redshift
 
 Fully managed, petabyte-scale cloud data warehouse for analytic workloads.
 
@@ -2237,13 +2237,13 @@ Amazon Redshift gives you the ability to analyze data that was collected from re
 
 ---
 
-# 🤖 AI and Machine Learning
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Artificial-Intelligence_16.png) AI and Machine Learning
 
 AI and ML services **find patterns, make predictions, and automate decisions** using your data.
 They offer everything from prebuilt AI APIs to full ML training and hosting platforms.
 Their core intent is to bring intelligent behavior into applications without requiring deep ML expertise.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Comprehend_16.png) Amazon Comprehend
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Comprehend_16.png) Amazon Comprehend
 
 Natural language processing (NLP) service using machine learning to extract insights from text.
 
@@ -2283,7 +2283,7 @@ Amazon Comprehend is a fully managed NLP service that performs entity recognitio
 
 - “Sentiment,” “entities,” “text analysis” → Comprehend
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Polly_16.png) Amazon Polly
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Polly_16.png) Amazon Polly
 
 Text-to-speech (TTS) service that converts text into lifelike speech.
 
@@ -2322,7 +2322,7 @@ Amazon Polly generates natural-sounding speech using deep learning, supporting m
 
 - “Text to speech,” “voice output” → Polly
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Transcribe_16.png) Amazon Transcribe
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Transcribe_16.png) Amazon Transcribe
 
 Automatic speech recognition (ASR) service converting speech to text.
 
@@ -2361,7 +2361,7 @@ Amazon Transcribe converts audio into text using machine learning, supporting sp
 
 - “Convert speech to text,” “ASR” → Transcribe
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Translate_16.png) Amazon Translate
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Translate_16.png) Amazon Translate
 
 Neural machine translation service for fast and accurate language translation.
 
@@ -2400,7 +2400,7 @@ Amazon Translate uses neural networks to translate text between many languages a
 
 - “Translate text between languages” → Translate
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Lex_16.png) Amazon Lex
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Lex_16.png) Amazon Lex
 
 Conversational AI service for building chatbots and voice assistants.
 
@@ -2439,7 +2439,7 @@ Amazon Lex enables the creation of conversational interfaces using the same deep
 
 - “Build chatbots,” “conversational interface” → Lex
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Rekognition_16.png) Amazon Rekognition
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Rekognition_16.png) Amazon Rekognition
 
 Image and video analysis service powered by deep learning.
 
@@ -2480,7 +2480,7 @@ Amazon Rekognition provides pre-trained and customizable computer vision capabil
 
 - “Object detection,” “content moderation,” “face recognition” → Rekognition
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Textract_16.png) Amazon Textract
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Textract_16.png) Amazon Textract
 
 OCR and document analysis service that extracts structured data from scanned documents.
 
@@ -2519,7 +2519,7 @@ Amazon Textract reads and extracts text, tables, forms, and key-value pairs from
 
 - “Forms,” “tables,” “OCR with key-value pairs” → Textract
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Forecast_16.png) Amazon Forecast
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Forecast_16.png) Amazon Forecast
 
 Time-series forecasting service using machine learning.
 
@@ -2558,7 +2558,7 @@ Amazon Forecast generates accurate forecasts using ML models trained on time-ser
 
 - “Demand planning,” “time-series” → Forecast
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Personalize_16.png) Amazon Personalize
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Personalize_16.png) Amazon Personalize
 
 Personalization and recommendation service based on ML.
 
@@ -2597,7 +2597,7 @@ Amazon Personalize builds custom recommendation models using behavioral data, si
 
 - “Personalized recommendations,” “user-item interactions” → Personalize
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Kendra_16.png) Amazon Kendra
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Kendra_16.png) Amazon Kendra
 
 Enterprise search service powered by ML for natural language queries.
 
@@ -2636,7 +2636,7 @@ Amazon Kendra provides intelligent enterprise search with natural language under
 
 - “Natural language enterprise search,” “FAQ matching” → Kendra
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-SageMaker_16.png) Amazon SageMaker
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-SageMaker_16.png) Amazon SageMaker
 
 Fully managed machine learning platform for building, training, and deploying ML models at scale.
 
@@ -2676,7 +2676,7 @@ Amazon SageMaker provides a comprehensive ML workflow environment including data
 
 - “End-to-end ML,” “training + deployment,” “MLOps” → SageMaker
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-SageMaker_16.png) SageMaker JumpStart
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-SageMaker_16.png) SageMaker JumpStart
 
 Pre-built ML solutions, models, and notebooks for rapid adoption.
 
@@ -2715,7 +2715,7 @@ SageMaker JumpStart provides ready-to-use ML templates, pretrained models, and s
 
 - “Prebuilt templates,” “get started fast in SageMaker” → JumpStart
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Bedrock_16.png) Amazon Bedrock
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Bedrock_16.png) Amazon Bedrock
 
 Managed generative AI service providing access to foundation models via API.
 
@@ -2755,7 +2755,7 @@ Amazon Bedrock offers a unified API to leading foundation models from AWS and th
 
 - “Foundation models,” “RAG,” “Agents,” “Guardrails” → Bedrock
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Q_16.png) Amazon Q Business
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Q_16.png) Amazon Q Business
 
 Enterprise-grade AI assistant for productivity and knowledge retrieval.
 
@@ -2794,7 +2794,7 @@ Amazon Q Business is a secure enterprise assistant that connects to internal sys
 
 - “Enterprise assistant,” “secure knowledge retrieval” → Q Business
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Q_16.png) Amazon Q Developer
+## ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Q_16.png) Amazon Q Developer
 
 AI coding assistant for software development workflows.
 
@@ -2835,13 +2835,13 @@ Amazon Q Developer provides AI-assisted code generation, refactoring, debugging 
 
 ---
 
-# 📈 Analytics
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Analytics_16.png) Analytics
 
 Analytics services **collect, process, and interpret data** at any scale.
 They let you query massive datasets, stream real-time information, and build dashboards.
 Their core intent is to turn raw data into insights you can act on.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Athena_16.png) Amazon Athena
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-Athena_16.png) Amazon Athena
 
 Serverless interactive query service for analyzing data in Amazon S3 using standard SQL.
 
@@ -2883,7 +2883,7 @@ Amazon Athena is a serverless SQL query engine that analyzes data directly in Am
 - Optimize cost with Parquet + partitioning
 - Serverless S3 queries → Athena
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Kinesis-Data-Streams_16.png) Amazon Kinesis Data Streams
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-Kinesis-Data-Streams_16.png) Amazon Kinesis Data Streams
 
 Real-time data ingestion and streaming platform for high-throughput event pipelines.
 
@@ -2925,7 +2925,7 @@ Kinesis can ingest real-time data from video, audio, application logs, and websi
 
 - Shards = capacity units; scaling requires shard splits/merges
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Data-Firehose_16.png) Amazon Kinesis Data Firehose
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-Data-Firehose_16.png) Amazon Kinesis Data Firehose
 
 Fully managed streaming delivery service that loads data into AWS destinations automatically.
 
@@ -2964,7 +2964,7 @@ Kinesis Firehose ingests streaming data and delivers it to S3, Redshift, OpenSea
 
 - “No shards,” “autoscaling,” “store data to S3/Redshift” → Firehose
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_AWS-Glue_16.png) AWS Glue
+## ![icon](icons/service/Arch_Analytics/16/Arch_AWS-Glue_16.png) AWS Glue
 
 Serverless data integration service for ETL, transformation, and data cataloging.
 
@@ -3005,7 +3005,7 @@ AWS Glue provides managed ETL via Glue Jobs, Crawlers, Workflows, and the Data C
 
 - “Managed Spark ETL,” “crawlers,” “Data Catalog” → Glue
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_AWS-Glue_16.png) AWS Glue Data Catalog
+## ![icon](icons/service/Arch_Analytics/16/Arch_AWS-Glue_16.png) AWS Glue Data Catalog
 
 Central metadata repository for analytics services.
 
@@ -3044,7 +3044,7 @@ Glue Data Catalog is a centralized, serverless metastore storing table schemas u
 
 - “Shared schema for Athena/EMR/Redshift Spectrum”
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-EMR_16.png) Amazon EMR
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-EMR_16.png) Amazon EMR
 
 Managed big data processing platform for Hadoop, Spark, Hive, Presto, and more.
 
@@ -3084,7 +3084,7 @@ Amazon EMR is a scalable cluster service for big data workloads, supporting Hado
 
 - “Hadoop,” “Spark,” “cluster,” or “serverless EMR” → EMR
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-QuickSight_16.png) Amazon QuickSight
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-QuickSight_16.png) Amazon QuickSight
 
 Cloud-native BI and dashboarding tool.
 
@@ -3123,7 +3123,7 @@ Amazon QuickSight provides interactive dashboards, visualizations, ML-powered in
 
 - “SPICE,” “BI dashboards,” “serverless analytics” → QuickSight
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-OpenSearch-Service_16.png) Amazon OpenSearch Service
+## ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-OpenSearch-Service_16.png) Amazon OpenSearch Service
 
 Managed search, analytics, and log ingestion service.
 
@@ -3165,13 +3165,13 @@ Amazon OpenSearch Service provides full-text search, log analytics, dashboards, 
 
 ---
 
-# 🔐 Security, Identity and Compliance
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Security-Identity-Compliance_16.png) Security, Identity and Compliance
 
 Security services **control access, protect data, and detect threats** across your cloud environment.
 They enforce identities, permissions, encryption, logging, and compliance requirements.
 Their core intent is to keep workloads safe and aligned with organizational and regulatory standards.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Identity-and-Access-Management_16.png) AWS Identity and Access Management (IAM)
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Identity-and-Access-Management_16.png) AWS Identity and Access Management (IAM)
 
 ### 1. Definition
 
@@ -3245,7 +3245,7 @@ Tool for testing and debugging IAM policies.
 
 - Used to test IAM permissions offline
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-IAM-Identity-Center_16.png) IAM Identity Center
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-IAM-Identity-Center_16.png) IAM Identity Center
 
 ### 1. Definition
 
@@ -3281,7 +3281,7 @@ Centralized SSO for workforce authentication across AWS accounts and application
 
 - "Workforce SSO" = Identity Center
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Key-Management-Service_16.png) AWS Key Management Service (KMS)
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Key-Management-Service_16.png) AWS Key Management Service (KMS)
 
 ### 1. Definition
 
@@ -3321,7 +3321,7 @@ AWS KMS makes it easy to create and manage cryptographic keys and control their 
 
 - Key policies govern access
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Secrets-Manager_16.png) AWS Secrets Manager
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Secrets-Manager_16.png) AWS Secrets Manager
 
 ### 1. Definition
 
@@ -3359,7 +3359,7 @@ Stores, rotates, and retrieves application secrets such as API keys and password
 
 - Automatic rotation = Secrets Manager
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Shield_16.png) AWS Shield
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Shield_16.png) AWS Shield
 
 ### 1. Definition
 
@@ -3395,7 +3395,7 @@ AWS Shield protects applications from DDoS attacks using always-on detection and
 
 - “DDoS basic protection” → Shield Standard
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Shield_16.png) AWS Shield Advanced
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Shield_16.png) AWS Shield Advanced
 
 ### 1. Definition
 
@@ -3431,7 +3431,7 @@ Enhanced DDoS protection with cost protection and advanced detection.
 
 - SLA + cost protection → Advanced
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-WAF_16.png) AWS WAF
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-WAF_16.png) AWS WAF
 
 ### 1. Definition
 
@@ -3471,7 +3471,7 @@ AWS WAF gives you control over how traffic reaches your applications. AWS WAF gi
 - SQLi/XSS mitigation → WAF
 - An AWS WAF rule can filter traffic carrying SQL injection attacks.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-Inspector_16.png) Amazon Inspector
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_Amazon-Inspector_16.png) Amazon Inspector
 
 ### 1. Definition
 
@@ -3512,7 +3512,7 @@ It is fully managed, agent-based for EC2 (via SSM Agent), agentless for Lambda a
 
 - “Vulnerability scanning” → Inspector
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-GuardDuty_16.png) Amazon GuardDuty
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_Amazon-GuardDuty_16.png) Amazon GuardDuty
 
 ### 1. Definition
 
@@ -3550,7 +3550,7 @@ It uses machine learning, anomaly detection, and threat intelligence feeds—suc
 
 - “Anomalous API calls,” “threat intel” → GuardDuty
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-Macie_16.png) Amazon Macie
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_Amazon-Macie_16.png) Amazon Macie
 
 ### 1. Definition
 
@@ -3587,7 +3587,7 @@ Amazon Macie uses ML to discover, classify, and protect sensitive data in Amazon
 
 - “PII in S3,” “sensitive data discovery” → Macie
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Security-Hub_16.png) AWS Security Hub
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Security-Hub_16.png) AWS Security Hub
 
 ### 1. Definition
 
@@ -3624,7 +3624,7 @@ Security Hub aggregates and standardizes findings from AWS security services int
 
 - “Centralize findings,” “compliance score” → Security Hub
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-Cognito_16.png) Amazon Cognito
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_Amazon-Cognito_16.png) Amazon Cognito
 
 ### 1. Definition
 
@@ -3661,7 +3661,7 @@ User identity and authentication service for apps, supporting sign-up, sign-in, 
 
 - “User Pools = authentication,” “Identity Pools = AWS access”
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Certificate-Manager_16.png) AWS Certificate Manager (ACM)
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Certificate-Manager_16.png) AWS Certificate Manager (ACM)
 
 ### 1. Definition
 
@@ -3697,7 +3697,7 @@ ACM helps you to provision, manage, and deploy SSL/TLS certificates on AWS manag
 
 - “Free certs,” “automatic renewal” → ACM
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Artifact_16.png) AWS Artifact
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Artifact_16.png) AWS Artifact
 
 ### 1. Definition
 
@@ -3733,7 +3733,7 @@ Portal providing on-demand access to AWS compliance reports and agreements.
 
 - “Compliance reports,” “AWS certifications” → Artifact
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Config_16.png) AWS Config
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Config_16.png) AWS Config
 
 ### 1. Definition
 
@@ -3771,7 +3771,7 @@ AWS Config records configuration changes of AWS resources and evaluates complian
 
 - “Configuration history,” “compliance rules” → Config
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Audit-Manager_16.png) AWS Audit Manager
+## ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Audit-Manager_16.png) AWS Audit Manager
 
 ### 1. Definition
 
@@ -3845,13 +3845,13 @@ IAM Access Analyzer identifies unintended public or cross-account access in poli
 
 ---
 
-# 🛠️ Management and Governance
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Management-Governance_16.png) Management and Governance
 
 Management and Governance tools **monitor, optimize, and standardize cloud operations**.
 They help you control cost, enforce policies, manage configurations, and view operational health.
 Their core intent is to run AWS environments predictably, efficiently, and at scale.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-CloudFormation_16.png) AWS CloudFormation
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-CloudFormation_16.png) AWS CloudFormation
 
 ### 1. Definition
 
@@ -3888,7 +3888,7 @@ CloudFormation automates provisioning of AWS resources using templates written i
 
 - “Infrastructure as Code,” “StackSets” → CloudFormation
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Systems-Manager_16.png) AWS Systems Manager
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Systems-Manager_16.png) AWS Systems Manager
 
 ### 1. Definition
 
@@ -3926,7 +3926,7 @@ Systems Manager provides unified operational management for compute resources, i
 
 - “Run Command,” “Session Manager (no SSH)” → SSM
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_Amazon-CloudWatch_16.png) Amazon CloudWatch
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_Amazon-CloudWatch_16.png) Amazon CloudWatch
 
 ### 1. Definition
 
@@ -3963,7 +3963,7 @@ CloudWatch provides monitoring, logging, metrics, alarms, dashboards, and event-
 
 - “Metrics + Logs + Alarms” → CloudWatch
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-CloudTrail_16.png) AWS CloudTrail
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-CloudTrail_16.png) AWS CloudTrail
 
 ### 1. Definition
 
@@ -4000,7 +4000,7 @@ CloudTrail records API calls and account activity for auditing and governance.
 
 - “API calls,” “audit logs,” “governance” → CloudTrail
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Organizations_16.png) AWS Organizations
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Organizations_16.png) AWS Organizations
 
 ### 1. Definition
 
@@ -4038,7 +4038,7 @@ Organizations manages multi-account environments with centralized governance, bi
 
 - “SCPs restrict, do not grant permissions” → Organizations
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Control-Tower_16.png) AWS Control Tower
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Control-Tower_16.png) AWS Control Tower
 
 ### 1. Definition
 
@@ -4075,7 +4075,7 @@ AWS Control Tower automates the setup of a secure, compliant multi-account AWS e
 
 - “Landing zone,” “guardrails” → Control Tower
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Service-Catalog_16.png) AWS Service Catalog
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Service-Catalog_16.png) AWS Service Catalog
 
 ### 1. Definition
 
@@ -4112,7 +4112,7 @@ Service Catalog allows organizations to curate and manage approved IT products f
 
 - “Approved products,” “governed self-service” → Service Catalog
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-License-Manager_16.png) AWS License Manager
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-License-Manager_16.png) AWS License Manager
 
 ### 1. Definition
 
@@ -4149,7 +4149,7 @@ License Manager tracks and governs software licenses across AWS and on-prem syst
 
 - “Track licenses,” “BYOL governance” → License Manager
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Health-Dashboard_16.png) AWS Health Dashboard
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Health-Dashboard_16.png) AWS Health Dashboard
 
 ### 1. Definition
 
@@ -4186,7 +4186,7 @@ AWS Health Dashboard provides account-specific and global insights into service 
 
 - “Service disruptions,” “maintenance events” → Health Dashboard
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Trusted-Advisor_16.png) AWS Trusted Advisor
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Trusted-Advisor_16.png) AWS Trusted Advisor
 
 ### 1. Definition
 
@@ -4225,7 +4225,7 @@ Trusted Advisor provides automated best-practice checks covering cost optimizati
 - Trusted Advisor checks the root account and warns if MFA is not enabled.
 - Trusted Advisor does not provide notifications about software patches for EC2 instances.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Compute-Optimizer_16.png) AWS Compute Optimizer
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Compute-Optimizer_16.png) AWS Compute Optimizer
 
 Machine learning–powered recommendations to rightsize AWS resources for better performance and cost efficiency.
 
@@ -4411,7 +4411,7 @@ Central location for viewing AWS costs, invoices, payment methods, and billing a
 
 - “Billing details,” “invoices,” “payment methods” → Billing Dashboard
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/16/Arch_AWS-Budgets_16.png) AWS Budgets
+## ![icon](icons/service/Arch_Cloud-Financial-Management/16/Arch_AWS-Budgets_16.png) AWS Budgets
 
 ### 1. Definition
 
@@ -4448,7 +4448,7 @@ AWS Budgets sets custom cost and usage thresholds and sends alerts when exceedin
 
 - “Alert when cost exceeds threshold” → Budgets
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/16/Arch_AWS-Cost-Explorer_16.png) AWS Cost Explorer
+## ![icon](icons/service/Arch_Cloud-Financial-Management/16/Arch_AWS-Cost-Explorer_16.png) AWS Cost Explorer
 
 ### 1. Definition
 
@@ -4484,7 +4484,7 @@ Cost Explorer analyzes AWS spending, usage patterns, and cost trends.
 
 - “Analyze past spend,” “RI recommendations” → Cost Explorer
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/16/Arch_AWS-Cost-and-Usage-Report_16.png) AWS Cost and Usage Reports (CUR)
+## ![icon](icons/service/Arch_Cloud-Financial-Management/16/Arch_AWS-Cost-and-Usage-Report_16.png) AWS Cost and Usage Reports (CUR)
 
 ### 1. Definition
 
@@ -4521,7 +4521,7 @@ CUR delivers the most detailed AWS cost and usage data, stored in S3 for analyti
 
 - “Most detailed cost data,” “S3-exported” → CUR
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/16/Arch_AWS-Billing-Conductor_16.png) AWS Billing Conductor
+## ![icon](icons/service/Arch_Cloud-Financial-Management/16/Arch_AWS-Billing-Conductor_16.png) AWS Billing Conductor
 
 ### 1. Definition
 
@@ -4560,13 +4560,13 @@ Billing Conductor enables custom chargeback and cost distribution across teams o
 
 ---
 
-# 🧩 Application Integration
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Application-Integration_16.png) Application Integration
 
 Application Integration services **connect independent systems** using messages, events, and workflows.
 They let components communicate without depending directly on each other.
 Their core intent is to build distributed systems that are resilient, loosely coupled, and scalable.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-EventBridge_16.png) Amazon EventBridge
+## ![icon](icons/service/Arch_App-Integration/16/Arch_Amazon-EventBridge_16.png) Amazon EventBridge
 
 ### 1. Definition
 
@@ -4604,7 +4604,7 @@ EventBridge is a serverless event bus for routing events between AWS services, S
 
 - “Event bus,” “routing,” “SaaS events” → EventBridge
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-Simple-Queue-Service_16.png) Amazon SQS
+## ![icon](icons/service/Arch_App-Integration/16/Arch_Amazon-Simple-Queue-Service_16.png) Amazon SQS
 
 ### 1. Definition
 
@@ -4641,7 +4641,7 @@ Simple Queue Service provides fully managed message queues for decoupling distri
 
 - “Decoupling with queues,” “FIFO ordering” → SQS
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-Simple-Notification-Service_16.png) Amazon SNS
+## ![icon](icons/service/Arch_App-Integration/16/Arch_Amazon-Simple-Notification-Service_16.png) Amazon SNS
 
 ### 1. Definition
 
@@ -4678,7 +4678,7 @@ SNS is a managed pub/sub messaging service for fanout delivery to multiple subsc
 
 - “Pub/sub,” “fanout,” “notifications” → SNS
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Elastic-Load-Balancing_16.png) Application Load Balancer (ALB)
+## ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Elastic-Load-Balancing_16.png) Application Load Balancer (ALB)
 
 ### 1. Definition
 
@@ -4717,13 +4717,13 @@ ALB is a layer 7 load balancer that routes HTTP/HTTPS traffic based on content a
 
 ---
 
-# ⌨️ Developer Tools
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Developer-Tools_16.png) Developer Tools
 
 Developer Tools **automate building, testing, and deploying software** for consistent CI/CD workflows.
 They manage source code, track changes, and streamline releases.
 Their core intent is to help teams ship software faster, safer, and with repeatable processes.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-Cloud9_16.png) AWS Cloud9
+## ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-Cloud9_16.png) AWS Cloud9
 
 ### 1. Definition
 
@@ -4760,7 +4760,7 @@ Cloud9 is a cloud-based IDE with collaborative editing, terminal access, and dir
 
 - “Cloud IDE,” “collaboration” → Cloud9
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CloudShell_16.png) AWS CloudShell
+## ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CloudShell_16.png) AWS CloudShell
 
 ### 1. Definition
 
@@ -4796,7 +4796,7 @@ CloudShell provides a browser-based Linux shell with AWS CLI preinstalled.
 
 - “Ready-to-use CLI in browser” → CloudShell
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodeCommit_16.png) AWS CodeCommit
+## ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodeCommit_16.png) AWS CodeCommit
 
 ### 1. Definition
 
@@ -4832,7 +4832,7 @@ CodeCommit is a fully managed Git repository service.
 
 - “Private Git repos on AWS” → CodeCommit
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodeBuild_16.png) AWS CodeBuild
+## ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodeBuild_16.png) AWS CodeBuild
 
 ### 1. Definition
 
@@ -4869,7 +4869,7 @@ CodeBuild is a fully managed CI service that compiles, tests, and builds artifac
 
 - “CI builds,” “buildspec” → CodeBuild
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodePipeline_16.png) AWS CodePipeline
+## ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodePipeline_16.png) AWS CodePipeline
 
 ### 1. Definition
 
@@ -4905,7 +4905,7 @@ CodePipeline automates CI/CD workflows using stages and actions.
 
 - “Pipeline orchestration,” “automate deployments” → CodePipeline
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodeDeploy_16.png) AWS CodeDeploy
+## ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodeDeploy_16.png) AWS CodeDeploy
 
 ### 1. Definition
 
@@ -4942,7 +4942,7 @@ CodeDeploy automates deployments to EC2, on-prem servers, and Lambda.
 
 - “Blue/green deployments,” “AppSpec” → CodeDeploy
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodeArtifact_16.png) AWS CodeArtifact
+## ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodeArtifact_16.png) AWS CodeArtifact
 
 ### 1. Definition
 
@@ -4978,7 +4978,7 @@ CodeArtifact is a managed artifact repository for package management (npm, Maven
 
 - “Package repository,” “npm/Maven/PyPI” → CodeArtifact
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-X-Ray_16.png) AWS X-Ray
+## ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-X-Ray_16.png) AWS X-Ray
 
 ### 1. Definition
 
@@ -5015,7 +5015,7 @@ X-Ray traces distributed applications to diagnose performance issues and errors.
 
 - “Distributed tracing,” “service map” → X-Ray
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-AppConfig_16.png) AWS AppConfig
+## ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-AppConfig_16.png) AWS AppConfig
 
 ### 1. Definition
 
@@ -5054,13 +5054,13 @@ AppConfig manages, validates, and deploys application configuration safely.
 
 ---
 
-# 📱 Frontend and Mobile
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Front-End-Web-Mobile_16.png) Frontend and Mobile
 
 Frontend and Mobile services **host and support user-facing applications** across web and mobile platforms.
 They provide managed backends, APIs, and hosting environments designed for modern client apps.
 Their core intent is to deliver responsive, scalable user experiences.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Front-End-Web-Mobile/16/Arch_AWS-Amplify_16.png) AWS Amplify
+## ![icon](icons/service/Arch_Front-End-Web-Mobile/16/Arch_AWS-Amplify_16.png) AWS Amplify
 
 ### 1. Definition
 
@@ -5097,7 +5097,7 @@ AWS Amplify is a frontend and mobile development platform that provides hosting,
 
 - “Frontend platform,” “hosting + auth,” “Amplify Studio” → Amplify
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_AWS-AppSync_16.png) AWS AppSync
+## ![icon](icons/service/Arch_App-Integration/16/Arch_AWS-AppSync_16.png) AWS AppSync
 
 ### 1. Definition
 
@@ -5136,13 +5136,13 @@ AWS AppSync is a fully managed GraphQL API service for building real-time, offli
 
 ---
 
-# 📊 Business Applications
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Business-Applications_16.png) Business Applications
 
 Business Applications provide **ready-made solutions** for communication, customer engagement, and internal workflows.
 They run fully managed, so teams can operate them without infrastructure overhead.
 Their core intent is to solve business needs quickly using turnkey cloud tools.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Business-Applications/16/Arch_Amazon-Connect_16.png) Amazon Connect
+## ![icon](icons/service/Arch_Business-Applications/16/Arch_Amazon-Connect_16.png) Amazon Connect
 
 ### 1. Definition
 
@@ -5179,7 +5179,7 @@ Amazon Connect is a cloud-based contact center service providing voice, chat, an
 
 - “Cloud contact center,” “IVR,” “omnichannel support” → Connect
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Business-Applications/16/Arch_Amazon-Simple-Email-Service_16.png) Amazon Simple Email Service (SES)
+## ![icon](icons/service/Arch_Business-Applications/16/Arch_Amazon-Simple-Email-Service_16.png) Amazon Simple Email Service (SES)
 
 ### 1. Definition
 
@@ -5218,13 +5218,13 @@ SES is a scalable email platform for transactional, marketing, and bulk email se
 
 ---
 
-# 🧑‍💻 End-User Computing
+# ![icon](icons/category/Arch-Category_16/Arch-Category_End-User-Computing_16.png) End-User Computing
 
 End-User Computing **delivers virtual desktops and applications** to users anywhere.
 It centralizes data and apps while enabling secure remote access.
 Its core intent is to support scalable, secure remote work without managing physical devices.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_End-User-Computing/16/Arch_Amazon-AppStream-2_16.png) Amazon AppStream 2.0
+## ![icon](icons/service/Arch_End-User-Computing/16/Arch_Amazon-AppStream-2_16.png) Amazon AppStream 2.0
 
 ### 1. Definition
 
@@ -5261,7 +5261,7 @@ Amazon AppStream 2.0 is a managed application streaming service that streams des
 
 - “Stream applications only,” “no full desktop” → AppStream 2.0
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_End-User-Computing/16/Arch_Amazon-WorkSpaces-Family_16.png) Amazon WorkSpaces
+## ![icon](icons/service/Arch_End-User-Computing/16/Arch_Amazon-WorkSpaces-Family_16.png) Amazon WorkSpaces
 
 ### 1. Definition
 
@@ -5298,7 +5298,7 @@ Amazon WorkSpaces is a managed Virtual Desktop Infrastructure (VDI) service prov
 
 - “Full desktop,” “Windows/Linux VDI” → WorkSpaces
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_End-User-Computing/16/Arch_Amazon-WorkSpaces-Family_16.png) WorkSpaces Secure Browser
+## ![icon](icons/service/Arch_End-User-Computing/16/Arch_Amazon-WorkSpaces-Family_16.png) WorkSpaces Secure Browser
 
 ### 1. Definition
 
@@ -5337,13 +5337,13 @@ WorkSpaces Secure Browser provides secure, isolated browser sessions streamed fr
 
 ---
 
-# 📟 IoT
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Internet-of-Things_16.png) IoT
 
 IoT services **connect physical devices to the cloud** and manage their data securely.
 They allow sensors and hardware to interact with cloud applications in real time.
 Their core intent is to bridge the physical and digital worlds for monitoring, automation, and intelligence.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Internet-of-Things/16/Arch_AWS-IoT-Core_16.png) AWS IoT Core
+## ![icon](icons/service/Arch_Internet-of-Things/16/Arch_AWS-IoT-Core_16.png) AWS IoT Core
 
 ### 1. Definition
 
@@ -5380,7 +5380,7 @@ AWS IoT Core is a managed cloud service that connects IoT devices to AWS securel
 
 - “Device Shadows,” “MQTT,” “connect devices to AWS” → IoT Core
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Internet-of-Things/16/Arch_AWS-IoT-Greengrass_16.png) AWS IoT Greengrass
+## ![icon](icons/service/Arch_Internet-of-Things/16/Arch_AWS-IoT-Greengrass_16.png) AWS IoT Greengrass
 
 ### 1. Definition
 
@@ -5420,13 +5420,13 @@ IoT Greengrass extends AWS to edge devices, enabling local compute, messaging, M
 
 ---
 
-# 🚚 Migration and Transfer
+# ![icon](icons/category/Arch-Category_16/Arch-Category_Migration-Modernization_16.png) Migration and Transfer
 
 Migration services **move applications, servers, and data into AWS** reliably.
 They support discovery, replication, bulk transfer, and modernization efforts.
 Their core intent is to make cloud adoption smooth, accurate, and low-risk.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Migration-Hub_16.png) AWS Migration Hub
+## ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-Migration-Hub_16.png) AWS Migration Hub
 
 ### 1. Definition
 
@@ -5462,7 +5462,7 @@ AWS Migration Hub provides a central location to track, orchestrate, and monitor
 
 - “Single place to track migrations” → Migration Hub
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Application-Discovery-Service_16.png) AWS Application Discovery Service
+## ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-Application-Discovery-Service_16.png) AWS Application Discovery Service
 
 ### 1. Definition
 
@@ -5499,7 +5499,7 @@ Application Discovery Service collects on-premises server, application, and depe
 
 - “Application dependency mapping,” “on-prem discovery” → ADS
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_AWS-Database-Migration-Service_16.png) AWS Database Migration Service (DMS)
+## ![icon](icons/service/Arch_Database/16/Arch_AWS-Database-Migration-Service_16.png) AWS Database Migration Service (DMS)
 
 ### 1. Definition
 
@@ -5572,7 +5572,7 @@ SCT converts database schemas and code objects for heterogeneous migrations (e.g
 
 - “Heterogeneous migrations,” “schema conversion” → SCT
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Migration-Evaluator_16.png) Migration Evaluator
+## ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-Migration-Evaluator_16.png) Migration Evaluator
 
 ### 1. Definition
 
@@ -5611,13 +5611,13 @@ Migration Evaluator provides cost modeling and business case analysis for migrat
 
 ---
 
-# 🛒 Marketplace and Partners
+# ![icon](icons/service/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png) Marketplace and Partners
 
 Marketplace and Partners **extend AWS with third‑party software and expert services**.
 They let organizations add capabilities instantly instead of building them from scratch.
 Their core intent is to accelerate adoption and reduce time‑to‑value through external solutions.
 
-## ![icon](icons/Architecture-Service-Icons_07312025/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png) AWS Marketplace
+## ![icon](icons/service/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png) AWS Marketplace
 
 ### 1. Definition
 
@@ -5697,183 +5697,183 @@ The AWS Partner Network is a global program for technology and consulting partne
 
 All services.
 
-### 🖥️ Compute
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Compute_16.png) Compute
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-EC2_16.png) **Amazon EC2** — Flexible virtual servers you size, tune, and script to run almost any workload.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-EC2-Auto-Scaling_16.png) **Amazon EC2 Auto Scaling** — Automatically adjusts EC2 capacity to maintain steady performance at the lowest cost.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Elastic-Load-Balancing_16.png) **Elastic Load Balancing (ELB)** — Distributes incoming traffic across instances or containers to keep apps reliable.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Lambda_16.png) **AWS Lambda** — Runs your code on demand with zero servers to manage.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Containers/16/Arch_AWS-Fargate_16.png) **AWS Fargate** — Serverless compute for containers so you focus only on tasks, not infrastructure.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Containers/16/Arch_Amazon-Elastic-Container-Service_16.png) **Amazon ECS** — AWS-native container orchestration for running and scaling Docker workloads.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Containers/16/Arch_Amazon-Elastic-Kubernetes-Service_16.png) **Amazon EKS** — Fully managed Kubernetes control plane for large-scale container workloads.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Containers/16/Arch_Amazon-Elastic-Container-Registry_16.png) **Amazon ECR** — Secure, private Docker image registry integrated with IAM and CI/CD.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Batch_16.png) **AWS Batch** — Runs batch computing jobs efficiently using dynamically provisioned compute.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Elastic-Beanstalk_16.png) **Elastic Beanstalk** — Quickly deploy applications with automatic provisioning, scaling, and monitoring.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_Amazon-Lightsail_16.png) **Amazon Lightsail** — Simplified VPS hosting for small applications with predictable pricing.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Outposts-family_16.png) **AWS Outposts** — Extends AWS hardware and services directly into your datacenter.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-API-Gateway_16.png) **Amazon API Gateway** — Manages, secures, and scales APIs for serverless and backend services.
+- ![icon](icons/service/Arch_Compute/16/Arch_Amazon-EC2_16.png) **Amazon EC2** — Flexible virtual servers you size, tune, and script to run almost any workload.
+- ![icon](icons/service/Arch_Compute/16/Arch_Amazon-EC2-Auto-Scaling_16.png) **Amazon EC2 Auto Scaling** — Automatically adjusts EC2 capacity to maintain steady performance at the lowest cost.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Elastic-Load-Balancing_16.png) **Elastic Load Balancing (ELB)** — Distributes incoming traffic across instances or containers to keep apps reliable.
+- ![icon](icons/service/Arch_Compute/16/Arch_AWS-Lambda_16.png) **AWS Lambda** — Runs your code on demand with zero servers to manage.
+- ![icon](icons/service/Arch_Containers/16/Arch_AWS-Fargate_16.png) **AWS Fargate** — Serverless compute for containers so you focus only on tasks, not infrastructure.
+- ![icon](icons/service/Arch_Containers/16/Arch_Amazon-Elastic-Container-Service_16.png) **Amazon ECS** — AWS-native container orchestration for running and scaling Docker workloads.
+- ![icon](icons/service/Arch_Containers/16/Arch_Amazon-Elastic-Kubernetes-Service_16.png) **Amazon EKS** — Fully managed Kubernetes control plane for large-scale container workloads.
+- ![icon](icons/service/Arch_Containers/16/Arch_Amazon-Elastic-Container-Registry_16.png) **Amazon ECR** — Secure, private Docker image registry integrated with IAM and CI/CD.
+- ![icon](icons/service/Arch_Compute/16/Arch_AWS-Batch_16.png) **AWS Batch** — Runs batch computing jobs efficiently using dynamically provisioned compute.
+- ![icon](icons/service/Arch_Compute/16/Arch_AWS-Elastic-Beanstalk_16.png) **Elastic Beanstalk** — Quickly deploy applications with automatic provisioning, scaling, and monitoring.
+- ![icon](icons/service/Arch_Compute/16/Arch_Amazon-Lightsail_16.png) **Amazon Lightsail** — Simplified VPS hosting for small applications with predictable pricing.
+- ![icon](icons/service/Arch_Compute/16/Arch_AWS-Outposts-family_16.png) **AWS Outposts** — Extends AWS hardware and services directly into your datacenter.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Amazon-API-Gateway_16.png) **Amazon API Gateway** — Manages, secures, and scales APIs for serverless and backend services.
 
-### 🌐 Networking and Content Delivery
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Networking-Content-Delivery_16.png) Networking and Content Delivery
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-Virtual-Private-Cloud_16.png) **Amazon VPC** — Build your own isolated AWS network with full control over routing and security layers.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Amazon-Virtual-Private-Cloud_16.png) **Amazon VPC** — Build your own isolated AWS network with full control over routing and security layers.
 - 🟪 **Network topics** — Core VPC concepts that define how cloud networks segment, isolate, and route traffic.
 - 🟪 **Internet Gateway** — The VPC’s path to the public internet for outbound and inbound connections.
 - 🟪 **Virtual Private Gateway** — VPN termination point enabling secure inbound tunnels from on‑premises.
 - 🟪 **NAT Gateway** — Lets private subnets reach the internet while keeping them unreachable from outside.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Client-VPN_16.png) **AWS Client VPN** — Fully managed VPN for users to securely access AWS and on‑prem resources.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Site-to-Site-VPN_16.png) **AWS Site-to-Site VPN** — Encrypted IPSec tunnels linking datacenters directly to AWS VPCs.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Direct-Connect_16.png) **AWS Direct Connect** — Low-latency private circuits that bypass the public internet for cloud traffic.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-PrivateLink_16.png) **AWS PrivateLink** — Private, secure access to AWS and SaaS services without crossing the public internet.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Transit-Gateway_16.png) **AWS Transit Gateway** — Central hub simplifying large-scale VPC and on‑prem network connectivity.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Client-VPN_16.png) **AWS Client VPN** — Fully managed VPN for users to securely access AWS and on‑prem resources.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Site-to-Site-VPN_16.png) **AWS Site-to-Site VPN** — Encrypted IPSec tunnels linking datacenters directly to AWS VPCs.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Direct-Connect_16.png) **AWS Direct Connect** — Low-latency private circuits that bypass the public internet for cloud traffic.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-PrivateLink_16.png) **AWS PrivateLink** — Private, secure access to AWS and SaaS services without crossing the public internet.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Transit-Gateway_16.png) **AWS Transit Gateway** — Central hub simplifying large-scale VPC and on‑prem network connectivity.
 - 🟪 **VPC Endpoints (Gateway & Interface)** — Connect privately to AWS services from within your VPC.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-Route-53_16.png) **Amazon Route 53** — Highly available DNS and traffic steering for global applications.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Amazon-CloudFront_16.png) **Amazon CloudFront** — Edge-based CDN delivering content faster to users worldwide.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_AWS-Global-Accelerator_16.png) **AWS Global Accelerator** — Routes user traffic over AWS’s global backbone for consistent low latency.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Amazon-Route-53_16.png) **Amazon Route 53** — Highly available DNS and traffic steering for global applications.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Amazon-CloudFront_16.png) **Amazon CloudFront** — Edge-based CDN delivering content faster to users worldwide.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_AWS-Global-Accelerator_16.png) **AWS Global Accelerator** — Routes user traffic over AWS’s global backbone for consistent low latency.
 
-### 💾 Storage
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Storage_16.png) Storage
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-Simple-Storage-Service_16.png) **Amazon S3** — Durable, scalable object storage for any data at any scale.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-Elastic-Block-Store_16.png) **Amazon EBS** — High-performance block storage volumes for EC2 instances.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-EFS_16.png) **Amazon EFS** — Fully managed shared file system that grows and shrinks automatically.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_Amazon-FSx_16.png) **Amazon FSx (Windows & Lustre)** — High-performance file systems for Windows apps and HPC workloads.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_AWS-Storage-Gateway_16.png) **AWS Storage Gateway** — Hybrid storage bridge integrating on-prem systems with cloud storage.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_AWS-Backup_16.png) **AWS Backup** — Centralized, automated backup service for AWS and on-prem workloads.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-DataSync_16.png) **AWS DataSync** — Accelerates data transfer between on-prem storage and AWS.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Transfer-Family_16.png) **AWS Transfer Family** — Managed SFTP, FTPS, and FTP endpoints backed by S3 storage.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_AWS-Elastic-Disaster-Recovery_16.png) **AWS Elastic Disaster Recovery** — Rapidly recovers servers to AWS after unexpected outages.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Storage/16/Arch_AWS-Snowball_16.png) **AWS Snow Family** — Rugged edge and data transfer devices for offline migrations and remote computing.
+- ![icon](icons/service/Arch_Storage/16/Arch_Amazon-Simple-Storage-Service_16.png) **Amazon S3** — Durable, scalable object storage for any data at any scale.
+- ![icon](icons/service/Arch_Storage/16/Arch_Amazon-Elastic-Block-Store_16.png) **Amazon EBS** — High-performance block storage volumes for EC2 instances.
+- ![icon](icons/service/Arch_Storage/16/Arch_Amazon-EFS_16.png) **Amazon EFS** — Fully managed shared file system that grows and shrinks automatically.
+- ![icon](icons/service/Arch_Storage/16/Arch_Amazon-FSx_16.png) **Amazon FSx (Windows & Lustre)** — High-performance file systems for Windows apps and HPC workloads.
+- ![icon](icons/service/Arch_Storage/16/Arch_AWS-Storage-Gateway_16.png) **AWS Storage Gateway** — Hybrid storage bridge integrating on-prem systems with cloud storage.
+- ![icon](icons/service/Arch_Storage/16/Arch_AWS-Backup_16.png) **AWS Backup** — Centralized, automated backup service for AWS and on-prem workloads.
+- ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-DataSync_16.png) **AWS DataSync** — Accelerates data transfer between on-prem storage and AWS.
+- ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-Transfer-Family_16.png) **AWS Transfer Family** — Managed SFTP, FTPS, and FTP endpoints backed by S3 storage.
+- ![icon](icons/service/Arch_Storage/16/Arch_AWS-Elastic-Disaster-Recovery_16.png) **AWS Elastic Disaster Recovery** — Rapidly recovers servers to AWS after unexpected outages.
+- ![icon](icons/service/Arch_Storage/16/Arch_AWS-Snowball_16.png) **AWS Snow Family** — Rugged edge and data transfer devices for offline migrations and remote computing.
 
-### 🗄️ Databases
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Database_16.png) Databases
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-RDS_16.png) **Amazon RDS** — Managed relational databases with automated backups, patching, and scaling.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-Aurora_16.png) **Amazon Aurora** — High-performance cloud-native relational database compatible with MySQL and PostgreSQL.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-DynamoDB_16.png) **Amazon DynamoDB** — Fully managed NoSQL key–value database delivering single-digit millisecond performance.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-DynamoDB_16.png) **Amazon DynamoDB Accelerator (DAX)** — In-memory caching that boosts DynamoDB reads from milliseconds to microseconds.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-ElastiCache_16.png) **Amazon ElastiCache** — Managed Redis and Memcached for ultra-fast in-memory caching layers.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-DocumentDB_16.png) **Amazon DocumentDB** — Scale-out document database compatible with MongoDB workloads.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_Amazon-Neptune_16.png) **Amazon Neptune** — Purpose-built graph database optimized for connected-data queries.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Redshift_16.png) **Amazon Redshift** — Fully managed petabyte-scale data warehouse for fast analytical queries.
+- ![icon](icons/service/Arch_Database/16/Arch_Amazon-RDS_16.png) **Amazon RDS** — Managed relational databases with automated backups, patching, and scaling.
+- ![icon](icons/service/Arch_Database/16/Arch_Amazon-Aurora_16.png) **Amazon Aurora** — High-performance cloud-native relational database compatible with MySQL and PostgreSQL.
+- ![icon](icons/service/Arch_Database/16/Arch_Amazon-DynamoDB_16.png) **Amazon DynamoDB** — Fully managed NoSQL key–value database delivering single-digit millisecond performance.
+- ![icon](icons/service/Arch_Database/16/Arch_Amazon-DynamoDB_16.png) **Amazon DynamoDB Accelerator (DAX)** — In-memory caching that boosts DynamoDB reads from milliseconds to microseconds.
+- ![icon](icons/service/Arch_Database/16/Arch_Amazon-ElastiCache_16.png) **Amazon ElastiCache** — Managed Redis and Memcached for ultra-fast in-memory caching layers.
+- ![icon](icons/service/Arch_Database/16/Arch_Amazon-DocumentDB_16.png) **Amazon DocumentDB** — Scale-out document database compatible with MongoDB workloads.
+- ![icon](icons/service/Arch_Database/16/Arch_Amazon-Neptune_16.png) **Amazon Neptune** — Purpose-built graph database optimized for connected-data queries.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-Redshift_16.png) **Amazon Redshift** — Fully managed petabyte-scale data warehouse for fast analytical queries.
 
-### 🤖 AI and Machine Learning
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Artificial-Intelligence_16.png) AI and Machine Learning
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Comprehend_16.png) **Amazon Comprehend** — NLP service that extracts insights and meaning from unstructured text.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Polly_16.png) **Amazon Polly** — Converts text into lifelike speech in dozens of voices and languages.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Transcribe_16.png) **Amazon Transcribe** — Automatically transforms speech into accurate text transcripts.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Translate_16.png) **Amazon Translate** — Neural machine translation for fast, natural multilingual text conversion.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Lex_16.png) **Amazon Lex** — Build conversational chatbots using ASR and NLU technology from Alexa.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Rekognition_16.png) **Amazon Rekognition** — Image and video analysis to detect objects, faces, text, and scenes.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Textract_16.png) **Amazon Textract** — Uses ML to extract text, forms, and tables from scanned documents.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Forecast_16.png) **Amazon Forecast** — ML-powered time-series forecasting for demand and capacity planning.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Personalize_16.png) **Amazon Personalize** — Real-time personalization and recommendation engine based on your data.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Kendra_16.png) **Amazon Kendra** — Intelligent enterprise search powered by machine learning.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-SageMaker_16.png) **Amazon SageMaker** — End-to-end platform for building, training, and deploying ML models at scale.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-SageMaker_16.png) **SageMaker JumpStart** — Prebuilt models and solutions that accelerate ML experimentation.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Bedrock_16.png) **Amazon Bedrock** — Foundation model platform providing secure access to top-tier generative AI models.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Q_16.png) **Amazon Q Business** — Enterprise AI assistant tailored for organizational data and workflows.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/16/Arch_Amazon-Q_16.png) **Amazon Q Developer** — AI coding assistant that accelerates software development and automation tasks.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Comprehend_16.png) **Amazon Comprehend** — NLP service that extracts insights and meaning from unstructured text.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Polly_16.png) **Amazon Polly** — Converts text into lifelike speech in dozens of voices and languages.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Transcribe_16.png) **Amazon Transcribe** — Automatically transforms speech into accurate text transcripts.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Translate_16.png) **Amazon Translate** — Neural machine translation for fast, natural multilingual text conversion.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Lex_16.png) **Amazon Lex** — Build conversational chatbots using ASR and NLU technology from Alexa.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Rekognition_16.png) **Amazon Rekognition** — Image and video analysis to detect objects, faces, text, and scenes.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Textract_16.png) **Amazon Textract** — Uses ML to extract text, forms, and tables from scanned documents.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Forecast_16.png) **Amazon Forecast** — ML-powered time-series forecasting for demand and capacity planning.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Personalize_16.png) **Amazon Personalize** — Real-time personalization and recommendation engine based on your data.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Kendra_16.png) **Amazon Kendra** — Intelligent enterprise search powered by machine learning.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-SageMaker_16.png) **Amazon SageMaker** — End-to-end platform for building, training, and deploying ML models at scale.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-SageMaker_16.png) **SageMaker JumpStart** — Prebuilt models and solutions that accelerate ML experimentation.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Bedrock_16.png) **Amazon Bedrock** — Foundation model platform providing secure access to top-tier generative AI models.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Q_16.png) **Amazon Q Business** — Enterprise AI assistant tailored for organizational data and workflows.
+- ![icon](icons/service/Arch_Artificial-Intelligence/16/Arch_Amazon-Q_16.png) **Amazon Q Developer** — AI coding assistant that accelerates software development and automation tasks.
 
-### 📈 Analytics
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Analytics_16.png) Analytics
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Athena_16.png) **Amazon Athena** — Serverless SQL queries directly against data in S3 using standard SQL.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Kinesis-Data-Streams_16.png) **Amazon Kinesis Data Streams** — Real-time data ingestion pipeline for high-throughput event streams.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-Data-Firehose_16.png) **Amazon Kinesis Data Firehose** — Fully managed streaming delivery to S3, Redshift, OpenSearch, and third-party tools.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_AWS-Glue_16.png) **AWS Glue** — Serverless ETL service that automates data discovery, transformation, and loading.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_AWS-Glue_16.png) **AWS Glue Data Catalog** — Centralized metadata store indexing datasets for analytics and ETL jobs.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-EMR_16.png) **Amazon EMR** — Managed big data clusters running Hadoop, Spark, Hive, and Presto at scale.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-QuickSight_16.png) **Amazon QuickSight** — Cloud-native BI dashboards with fast, in-memory SPICE queries.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Analytics/16/Arch_Amazon-OpenSearch-Service_16.png) **Amazon OpenSearch Service** — Managed search and analytics engine for real-time log and data exploration.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-Athena_16.png) **Amazon Athena** — Serverless SQL queries directly against data in S3 using standard SQL.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-Kinesis-Data-Streams_16.png) **Amazon Kinesis Data Streams** — Real-time data ingestion pipeline for high-throughput event streams.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-Data-Firehose_16.png) **Amazon Kinesis Data Firehose** — Fully managed streaming delivery to S3, Redshift, OpenSearch, and third-party tools.
+- ![icon](icons/service/Arch_Analytics/16/Arch_AWS-Glue_16.png) **AWS Glue** — Serverless ETL service that automates data discovery, transformation, and loading.
+- ![icon](icons/service/Arch_Analytics/16/Arch_AWS-Glue_16.png) **AWS Glue Data Catalog** — Centralized metadata store indexing datasets for analytics and ETL jobs.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-EMR_16.png) **Amazon EMR** — Managed big data clusters running Hadoop, Spark, Hive, and Presto at scale.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-QuickSight_16.png) **Amazon QuickSight** — Cloud-native BI dashboards with fast, in-memory SPICE queries.
+- ![icon](icons/service/Arch_Analytics/16/Arch_Amazon-OpenSearch-Service_16.png) **Amazon OpenSearch Service** — Managed search and analytics engine for real-time log and data exploration.
 
-### 🔐 Security, Identity, and Compliance
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Security-Identity-Compliance_16.png) Security, Identity, and Compliance
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Identity-and-Access-Management_16.png) **AWS Identity and Access Management (IAM)** — Controls who can access what in your AWS environment.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Identity-and-Access-Management_16.png) **AWS Identity and Access Management (IAM)** — Controls who can access what in your AWS environment.
 - 🟥 **IAM Policy Simulator** — Test and validate IAM policies to ensure permissions behave as intended.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-IAM-Identity-Center_16.png) **IAM Identity Center** — Centralized workforce identity and SSO for AWS accounts and applications.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Key-Management-Service_16.png) **AWS Key Management Service (KMS)** — Securely create and manage encryption keys for your applications.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Secrets-Manager_16.png) **AWS Secrets Manager** — Stores and rotates sensitive credentials automatically and securely.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Shield_16.png) **AWS Shield** — Always-on DDoS protection for AWS applications.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Shield_16.png) **AWS Shield Advanced** — Enhanced DDoS protection with real-time engagement and cost safeguards.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-WAF_16.png) **AWS WAF** — Web application firewall blocking malicious bots, exploits, and attacks.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-Inspector_16.png) **Amazon Inspector** — Automated vulnerability scanning for EC2 and container workloads.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-GuardDuty_16.png) **Amazon GuardDuty** — Intelligent threat detection and continuous security monitoring.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-Macie_16.png) **Amazon Macie** — ML-powered discovery of sensitive data and anomalies in S3.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Security-Hub_16.png) **AWS Security Hub** — Unified dashboard to monitor and score your overall AWS security posture.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_Amazon-Cognito_16.png) **Amazon Cognito** — Managed user authentication with hosted sign-in and MFA.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Certificate-Manager_16.png) **AWS Certificate Manager (ACM)** — Automated provisioning and renewal of TLS certificates.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Artifact_16.png) **AWS Artifact** — On-demand access to compliance reports and security documentation.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Config_16.png) **AWS Config** — Tracks configuration changes and checks resource compliance over time.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/16/Arch_AWS-Audit-Manager_16.png) **AWS Audit Manager** — Simplifies audits by mapping evidence to compliance frameworks automatically.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-IAM-Identity-Center_16.png) **IAM Identity Center** — Centralized workforce identity and SSO for AWS accounts and applications.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Key-Management-Service_16.png) **AWS Key Management Service (KMS)** — Securely create and manage encryption keys for your applications.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Secrets-Manager_16.png) **AWS Secrets Manager** — Stores and rotates sensitive credentials automatically and securely.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Shield_16.png) **AWS Shield** — Always-on DDoS protection for AWS applications.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Shield_16.png) **AWS Shield Advanced** — Enhanced DDoS protection with real-time engagement and cost safeguards.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-WAF_16.png) **AWS WAF** — Web application firewall blocking malicious bots, exploits, and attacks.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_Amazon-Inspector_16.png) **Amazon Inspector** — Automated vulnerability scanning for EC2 and container workloads.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_Amazon-GuardDuty_16.png) **Amazon GuardDuty** — Intelligent threat detection and continuous security monitoring.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_Amazon-Macie_16.png) **Amazon Macie** — ML-powered discovery of sensitive data and anomalies in S3.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Security-Hub_16.png) **AWS Security Hub** — Unified dashboard to monitor and score your overall AWS security posture.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_Amazon-Cognito_16.png) **Amazon Cognito** — Managed user authentication with hosted sign-in and MFA.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Certificate-Manager_16.png) **AWS Certificate Manager (ACM)** — Automated provisioning and renewal of TLS certificates.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Artifact_16.png) **AWS Artifact** — On-demand access to compliance reports and security documentation.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Config_16.png) **AWS Config** — Tracks configuration changes and checks resource compliance over time.
+- ![icon](icons/service/Arch_Security-Identity-Compliance/16/Arch_AWS-Audit-Manager_16.png) **AWS Audit Manager** — Simplifies audits by mapping evidence to compliance frameworks automatically.
 - 🟥 **IAM Access Analyzer** — Detects unintended external access to IAM roles, S3 buckets, and more.
 
-### 🛠️ Management and Governance
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Management-Governance_16.png) Management and Governance
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-CloudFormation_16.png) **AWS CloudFormation** — Automates infrastructure deployment using templates for repeatable, versioned environments.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Systems-Manager_16.png) **AWS Systems Manager** — Unified operational console for patching, automation, fleet management, and configuration.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_Amazon-CloudWatch_16.png) **Amazon CloudWatch** — Observability platform for metrics, logs, and alarms across AWS resources.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-CloudTrail_16.png) **AWS CloudTrail** — Governance and auditing for all API activity across AWS accounts.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Organizations_16.png) **AWS Organizations** — Centralized multi-account management with SCPs, billing consolidation, and governance.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Control-Tower_16.png) **AWS Control Tower** — Blueprinted landing zone setup with automated guardrails and best practices.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Service-Catalog_16.png) **AWS Service Catalog** — Curate approved application portfolios with governed self-service deployment.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-License-Manager_16.png) **AWS License Manager** — Track, control, and enforce software license usage across AWS and on‑prem.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Health-Dashboard_16.png) **AWS Health Dashboard** — Personalized view of AWS service health events affecting your resources.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Trusted-Advisor_16.png) **AWS Trusted Advisor** — Recommendations to improve cost efficiency, performance, security, and resilience.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-Compute-Optimizer_16.png) **AWS Compute Optimizer** — ML-powered right-sizing recommendations for EC2, Lambda, and containers.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-CloudFormation_16.png) **AWS CloudFormation** — Automates infrastructure deployment using templates for repeatable, versioned environments.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Systems-Manager_16.png) **AWS Systems Manager** — Unified operational console for patching, automation, fleet management, and configuration.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_Amazon-CloudWatch_16.png) **Amazon CloudWatch** — Observability platform for metrics, logs, and alarms across AWS resources.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-CloudTrail_16.png) **AWS CloudTrail** — Governance and auditing for all API activity across AWS accounts.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Organizations_16.png) **AWS Organizations** — Centralized multi-account management with SCPs, billing consolidation, and governance.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Control-Tower_16.png) **AWS Control Tower** — Blueprinted landing zone setup with automated guardrails and best practices.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Service-Catalog_16.png) **AWS Service Catalog** — Curate approved application portfolios with governed self-service deployment.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-License-Manager_16.png) **AWS License Manager** — Track, control, and enforce software license usage across AWS and on‑prem.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Health-Dashboard_16.png) **AWS Health Dashboard** — Personalized view of AWS service health events affecting your resources.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Trusted-Advisor_16.png) **AWS Trusted Advisor** — Recommendations to improve cost efficiency, performance, security, and resilience.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-Compute-Optimizer_16.png) **AWS Compute Optimizer** — ML-powered right-sizing recommendations for EC2, Lambda, and containers.
 - 🟩 **AWS Pricing Calculator** — Estimate and compare AWS service costs before deploying workloads.
 - 🟩 **AWS Data Lifecycle Manager** — Automates EBS and EC2 snapshot retention and lifecycle policies.
 - 🟩 **AWS Billing and Cost Management** — Central billing console for budgets, payments, and account charges.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/16/Arch_AWS-Budgets_16.png) **AWS Budgets** — Set cost and usage thresholds with alerts when you exceed or forecast to exceed them.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/16/Arch_AWS-Cost-Explorer_16.png) **AWS Cost Explorer** — Visualize and analyze AWS spending trends over time.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/16/Arch_AWS-Cost-and-Usage-Report_16.png) **AWS Cost and Usage Reports (CUR)** — Detailed, hourly-level AWS cost and usage datasets for analysis.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Cloud-Financial-Management/16/Arch_AWS-Billing-Conductor_16.png) **AWS Billing Conductor** — Customizable cost allocation tooling for complex billing arrangements.
+- ![icon](icons/service/Arch_Cloud-Financial-Management/16/Arch_AWS-Budgets_16.png) **AWS Budgets** — Set cost and usage thresholds with alerts when you exceed or forecast to exceed them.
+- ![icon](icons/service/Arch_Cloud-Financial-Management/16/Arch_AWS-Cost-Explorer_16.png) **AWS Cost Explorer** — Visualize and analyze AWS spending trends over time.
+- ![icon](icons/service/Arch_Cloud-Financial-Management/16/Arch_AWS-Cost-and-Usage-Report_16.png) **AWS Cost and Usage Reports (CUR)** — Detailed, hourly-level AWS cost and usage datasets for analysis.
+- ![icon](icons/service/Arch_Cloud-Financial-Management/16/Arch_AWS-Billing-Conductor_16.png) **AWS Billing Conductor** — Customizable cost allocation tooling for complex billing arrangements.
 
-### 🧩 Application Integration
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Application-Integration_16.png) Application Integration
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-EventBridge_16.png) **Amazon EventBridge** — Event bus for routing application events between AWS services and SaaS apps.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-Simple-Queue-Service_16.png) **Amazon SQS** — Fully managed message queues decoupling producers from consumers at any scale.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_Amazon-Simple-Notification-Service_16.png) **Amazon SNS** — Pub/sub messaging for fan-out notifications and event-driven systems.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/16/Arch_Elastic-Load-Balancing_16.png) **Application Load Balancer (ALB)** — Layer 7 load balancer for HTTP/S traffic with routing, auth, and advanced rules.
+- ![icon](icons/service/Arch_App-Integration/16/Arch_Amazon-EventBridge_16.png) **Amazon EventBridge** — Event bus for routing application events between AWS services and SaaS apps.
+- ![icon](icons/service/Arch_App-Integration/16/Arch_Amazon-Simple-Queue-Service_16.png) **Amazon SQS** — Fully managed message queues decoupling producers from consumers at any scale.
+- ![icon](icons/service/Arch_App-Integration/16/Arch_Amazon-Simple-Notification-Service_16.png) **Amazon SNS** — Pub/sub messaging for fan-out notifications and event-driven systems.
+- ![icon](icons/service/Arch_Networking-Content-Delivery/16/Arch_Elastic-Load-Balancing_16.png) **Application Load Balancer (ALB)** — Layer 7 load balancer for HTTP/S traffic with routing, auth, and advanced rules.
 
-### ⌨️ Developer Tools
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Developer-Tools_16.png) Developer Tools
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-Cloud9_16.png) **AWS Cloud9** — Cloud-based IDE for writing, debugging, and collaborating on code from anywhere.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CloudShell_16.png) **AWS CloudShell** — Browser-based shell with AWS CLI preconfigured for quick command execution.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodeCommit_16.png) **AWS CodeCommit** — Managed Git repositories with high availability and security.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodeBuild_16.png) **AWS CodeBuild** — Fully managed build service that compiles code, runs tests, and produces artifacts.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodePipeline_16.png) **AWS CodePipeline** — Continuous delivery pipelines automating build, test, and deploy workflows.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodeDeploy_16.png) **AWS CodeDeploy** — Automated deployment engine for EC2, Lambda, and on-prem servers.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-CodeArtifact_16.png) **AWS CodeArtifact** — Secure artifact and dependency repository for build systems and package managers.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Developer-Tools/16/Arch_AWS-X-Ray_16.png) **AWS X-Ray** — Distributed tracing that reveals bottlenecks and dependencies in your applications.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Management-Governance/16/Arch_AWS-AppConfig_16.png) **AWS AppConfig** — Feature flag and configuration rollout service for safe, gradual application changes.
+- ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-Cloud9_16.png) **AWS Cloud9** — Cloud-based IDE for writing, debugging, and collaborating on code from anywhere.
+- ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CloudShell_16.png) **AWS CloudShell** — Browser-based shell with AWS CLI preconfigured for quick command execution.
+- ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodeCommit_16.png) **AWS CodeCommit** — Managed Git repositories with high availability and security.
+- ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodeBuild_16.png) **AWS CodeBuild** — Fully managed build service that compiles code, runs tests, and produces artifacts.
+- ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodePipeline_16.png) **AWS CodePipeline** — Continuous delivery pipelines automating build, test, and deploy workflows.
+- ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodeDeploy_16.png) **AWS CodeDeploy** — Automated deployment engine for EC2, Lambda, and on-prem servers.
+- ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-CodeArtifact_16.png) **AWS CodeArtifact** — Secure artifact and dependency repository for build systems and package managers.
+- ![icon](icons/service/Arch_Developer-Tools/16/Arch_AWS-X-Ray_16.png) **AWS X-Ray** — Distributed tracing that reveals bottlenecks and dependencies in your applications.
+- ![icon](icons/service/Arch_Management-Governance/16/Arch_AWS-AppConfig_16.png) **AWS AppConfig** — Feature flag and configuration rollout service for safe, gradual application changes.
 
-### 📱 Frontend and Mobile
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Front-End-Web-Mobile_16.png) Frontend and Mobile
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Front-End-Web-Mobile/16/Arch_AWS-Amplify_16.png) **AWS Amplify** — Streamlines building, hosting, and scaling full-stack web and mobile applications.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_App-Integration/16/Arch_AWS-AppSync_16.png) **AWS AppSync** — Managed GraphQL service for real-time data sync across apps and devices.
+- ![icon](icons/service/Arch_Front-End-Web-Mobile/16/Arch_AWS-Amplify_16.png) **AWS Amplify** — Streamlines building, hosting, and scaling full-stack web and mobile applications.
+- ![icon](icons/service/Arch_App-Integration/16/Arch_AWS-AppSync_16.png) **AWS AppSync** — Managed GraphQL service for real-time data sync across apps and devices.
 
-### 📊 Business Applications
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Business-Applications_16.png) Business Applications
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Business-Applications/16/Arch_Amazon-Connect_16.png) **Amazon Connect** — Cloud contact center enabling scalable, personalized customer interactions.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Business-Applications/16/Arch_Amazon-Simple-Email-Service_16.png) **Amazon Simple Email Service (SES)** — Reliable, scalable email sending for applications and marketing.
+- ![icon](icons/service/Arch_Business-Applications/16/Arch_Amazon-Connect_16.png) **Amazon Connect** — Cloud contact center enabling scalable, personalized customer interactions.
+- ![icon](icons/service/Arch_Business-Applications/16/Arch_Amazon-Simple-Email-Service_16.png) **Amazon Simple Email Service (SES)** — Reliable, scalable email sending for applications and marketing.
 
-### 🧑‍💻 End-User Computing
+## ![icon](icons/category/Arch-Category_16/Arch-Category_End-User-Computing_16.png) End-User Computing
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_End-User-Computing/16/Arch_Amazon-AppStream-2_16.png) **Amazon AppStream 2.0** — Streams desktop applications securely to any device.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_End-User-Computing/16/Arch_Amazon-WorkSpaces-Family_16.png) **Amazon WorkSpaces** — Managed virtual desktops for secure remote work.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_End-User-Computing/16/Arch_Amazon-WorkSpaces-Family_16.png) **WorkSpaces Secure Browser** — Isolated browser environment protecting users from web-based threats.
+- ![icon](icons/service/Arch_End-User-Computing/16/Arch_Amazon-AppStream-2_16.png) **Amazon AppStream 2.0** — Streams desktop applications securely to any device.
+- ![icon](icons/service/Arch_End-User-Computing/16/Arch_Amazon-WorkSpaces-Family_16.png) **Amazon WorkSpaces** — Managed virtual desktops for secure remote work.
+- ![icon](icons/service/Arch_End-User-Computing/16/Arch_Amazon-WorkSpaces-Family_16.png) **WorkSpaces Secure Browser** — Isolated browser environment protecting users from web-based threats.
 
-### 📟 IoT
+### ![icon](icons/category/Arch-Category_16/Arch-Category_Internet-of-Things_16.png) IoT
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Internet-of-Things/16/Arch_AWS-IoT-Core_16.png) **AWS IoT Core** — Securely connects IoT devices to the cloud and routes their data to AWS services.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Internet-of-Things/16/Arch_AWS-IoT-Greengrass_16.png) **AWS IoT Greengrass** — Brings cloud capabilities like ML inference and messaging to edge devices.
+- ![icon](icons/service/Arch_Internet-of-Things/16/Arch_AWS-IoT-Core_16.png) **AWS IoT Core** — Securely connects IoT devices to the cloud and routes their data to AWS services.
+- ![icon](icons/service/Arch_Internet-of-Things/16/Arch_AWS-IoT-Greengrass_16.png) **AWS IoT Greengrass** — Brings cloud capabilities like ML inference and messaging to edge devices.
 
-### 🚚 Migration and Transfer
+## ![icon](icons/category/Arch-Category_16/Arch-Category_Migration-Modernization_16.png) Migration and Transfer
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Migration-Hub_16.png) **AWS Migration Hub** — Centralizes tracking and visibility for application migration projects.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Application-Discovery-Service_16.png) **AWS Application Discovery Service** — Identifies on-prem servers and dependencies to plan migrations.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Database/16/Arch_AWS-Database-Migration-Service_16.png) **AWS Database Migration Service (DMS)** — Migrates databases to AWS with minimal downtime.
+- ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-Migration-Hub_16.png) **AWS Migration Hub** — Centralizes tracking and visibility for application migration projects.
+- ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-Application-Discovery-Service_16.png) **AWS Application Discovery Service** — Identifies on-prem servers and dependencies to plan migrations.
+- ![icon](icons/service/Arch_Database/16/Arch_AWS-Database-Migration-Service_16.png) **AWS Database Migration Service (DMS)** — Migrates databases to AWS with minimal downtime.
 - 🟪 **AWS Schema Conversion Tool (SCT)** — Converts database schemas to match target engines such as Aurora or PostgreSQL.
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_Migration-Modernization/16/Arch_AWS-Migration-Evaluator_16.png) **Migration Evaluator** — Provides right-sizing and cost projections for migrating workloads to AWS.
+- ![icon](icons/service/Arch_Migration-Modernization/16/Arch_AWS-Migration-Evaluator_16.png) **Migration Evaluator** — Provides right-sizing and cost projections for migrating workloads to AWS.
 
-### 🛒 Marketplace and Partners
+## ![icon](icons/service/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png) Marketplace and Partners
 
-- ![icon](icons/Architecture-Service-Icons_07312025/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png) **AWS Marketplace** — Curated digital catalog of third-party software you can deploy directly into AWS.
+- ![icon](icons/service/Arch_General-Icons/16/Arch_AWS-Marketplace_Light_16.png) **AWS Marketplace** — Curated digital catalog of third-party software you can deploy directly into AWS.
 - ⬛ **AWS Partner Network (APN)** — Global community of partners offering solutions, integrations, and services on AWS.
