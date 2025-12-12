@@ -3,7 +3,7 @@
 ## Table of Contents
 
 <img src="icons/category/Arch-Category_16/Arch-Category_Compute_16.png" alt="icon" width="16" height="16"> [Compute](#compute)\
-<img src="icons/category/Arch-Category_16/Arch-Category_Networking-Content-Delivery_16.png" alt="icon" width="16" height="16"> [Networking and Content Delivery](#networking-and-content-delivery)\
+<img src="icons/category/Arch-Category_16/Arch-Category_Networking-Content-Delivery_16.png" alt="icon" width="16" height="16"> [Networking and Content Delivery](#-networking-and-content-delivery)\
 <img src="icons/category/Arch-Category_16/Arch-Category_Storage_16.png" alt="icon" width="16" height="16"> [Storage](#storage)\
 <img src="icons/category/Arch-Category_16/Arch-Category_Database_16.png" alt="icon" width="16" height="16"> [Databases](#databases)\
 <img src="icons/category/Arch-Category_16/Arch-Category_Artificial-Intelligence_16.png" alt="icon" width="16" height="16"> [AI and Machine Learning](#ai-and-machine-learning)\
